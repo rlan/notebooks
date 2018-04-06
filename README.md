@@ -1,2 +1,2 @@
 # notebooks
-Jupyter notebooks
+Sandbox for Jupyter notebooks
