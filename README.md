@@ -1,2 +1,2 @@
 # notebooks
-Sandbox for Jupyter notebooks
+Sandbox for personal Jupyter notebooks
