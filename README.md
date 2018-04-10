@@ -28,8 +28,8 @@ docker run -it -v $2:/notebooks -p 8888:8888 -p 6006:6006 $1
 
 where:
 
-* `$1` is the docker tag for this image, e.g. wqael/notebooks:latest
-* `$2` is the folder containing the notebooks on the host file system, e.g. ~/notebooks
+* `$1` is the docker tag for this image, e.g. `wqael/notebooks:latest`
+* `$2` is the folder containing the notebooks on the host file system, e.g. `~/notebooks`
 
 
 **Step 3**: From the log, copy-and-paste the line similar to the following to your favorite browser:
