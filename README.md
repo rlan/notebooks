@@ -39,3 +39,13 @@ where:
     to login with a token:
         http://localhost:8888/?token=<token string>
 ```
+
+**Step bonus***: Use next generation Jupyter:
+
+After jupyter home page is loaded, i.e. `http://localhost:8888/tree`, browse to `http://localhost:8888/lab`.
+
+![jupyter_lab_screenshot](https://user-images.githubusercontent.com/1386868/38536941-ce8effb0-3cc6-11e8-936b-fe5d80fdc660.jpg)
+
+**Step 4**: How to shutdown the docker image:
+
+In the running image terminal, hit Ctrl+C **twice**.
