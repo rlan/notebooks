@@ -5,9 +5,9 @@ Starter kit for Jupyter notebooks. Python 3, Tensorflow, Keras and GPU ready.
 ![screenshot](https://user-images.githubusercontent.com/1386868/38400484-2525b10a-398b-11e8-84a6-e9b53611ce05.jpg)
 
 
-# Where are docker images?
+# Are there docker images?
 
-[Pre-built](https://hub.docker.com/r/wqael/notebooks/) docker images are availble for running notebooks in this repo.
+[Pre-built](https://hub.docker.com/r/wqael/notebooks/) docker images are available for running notebooks in this repo.
 
 Tags:
 
