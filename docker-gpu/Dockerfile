@@ -1,7 +1,10 @@
-FROM tensorflow/tensorflow:1.7.0-py3
+FROM tensorflow/tensorflow:1.4.1-gpu-py3
+# tensorflow 1.5+ needs cuda 9.
+# tensorflow 1.4.1 needs cuda 8.
 
-LABEL description="Prebuilt jupyter environment on tensorflow on Ubuntu."
+LABEL description="Prebuilt jupyter environment on GPU-supported tensorflow on Ubuntu."
 LABEL maintainer="https://github.com/rlan/notebooks"
+
 
 RUN apt-get -qq update --fix-missing \
     && apt-get -qq install -y \
