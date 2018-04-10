@@ -7,22 +7,20 @@ Starter kit for personal Jupyter notebooks
 
 # Dockerfile
 
-Pre-built docker images are availble for running notebooks in this repo.
+[Pre-built](https://hub.docker.com/r/wqael/notebooks/) docker images are availble for running notebooks in this repo.
 
 Tags:
 
-* `latest` CPU-only. [Dockerfile](docker\Dockerfile)
-* `gpu` GPU supported. [Dockerfile](docker-gpu\Dockerfile)
+* `latest` CPU-only. [Dockerfile](docker/Dockerfile)
+* `gpu` GPU supported. [Dockerfile](docker-gpu/Dockerfile)
 
-Step 1: pull pre-built images:
+**Step 1**: pull pre-built images:
 
 ```sh
 docker pull wqael/notebooks:<tag>
 ```
 
-See [https://hub.docker.com/r/wqael/notebooks/](https://hub.docker.com/r/wqael/notebooks/) for details.
-
-Step 2: launch image:
+**Step 2**: launch image:
 
 ```sh
 docker run -it -v $2:/notebooks -p 8888:8888 -p 6006:6006 $1
@@ -30,11 +28,11 @@ docker run -it -v $2:/notebooks -p 8888:8888 -p 6006:6006 $1
 
 where:
 
-* `$1` is the docker tag for this image
-* `$2` is the folder containing the notebooks on the host file system.
+* `$1` is the docker tag for this image, e.g. wqael/notebooks:latest
+* `$2` is the folder containing the notebooks on the host file system, e.g. ~/notebooks
 
 
-Step 3: From the log, copy-and-paste the line similar to the following to your favorite browser:
+**Step 3**: From the log, copy-and-paste the line similar to the following to your favorite browser:
 
 ```sh
     Copy/paste this URL into your browser when you connect for the first time,
