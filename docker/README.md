@@ -2,12 +2,26 @@
 
 [Pre-built](https://hub.docker.com/r/wqael/notebooks/) docker images are available for running notebooks in this repo.
 
-Tags:
+# Tags
 
-* `latest`, `py3-tf1.7.0` CPU-only. [Dockerfile](cpu/Dockerfile).
-* `cuda8-py3-tf1.4.1` [Dockerfile](gpu/Dockerfile).
-* `cuda8-cudnn7-conda3-py3-pytorch` [Dockerfile](cuda8-cudnn7-conda3-py3-pytorch/Dockerfile).
+Caffe:
+
 * `cuda8-py2-caffe2-detectron` For Facebook's [Detectron](https://github.com/facebookresearch/Detectron). [Dockerfile](cuda8-py2-caffe2-detectron/Dockerfile). 
+
+Keras:
+
+* `py3-tf1.7.0-keras` CPU-only. [Dockerfile](py3-tf1.7.0/Dockerfile).
+* `cuda8-py3-tf1.4.1-keras` [Dockerfile](cuda8-py3-tf1.4.1/Dockerfile).
+
+Tensorflow:
+
+* `latest`, `py3-tf1.7.0` CPU-only. [Dockerfile](py3-tf1.7.0/Dockerfile).
+* `cuda8-py3-tf1.4.1` [Dockerfile](cuda8-py3-tf1.4.1/Dockerfile).
+
+PyTorch:
+
+* `cuda8-cudnn7-conda3-py3-pytorch` [Dockerfile](cuda8-cudnn7-conda3-py3-pytorch/Dockerfile).
+
 
 **Step 1**: pull pre-built images:
 
