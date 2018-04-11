@@ -4,10 +4,10 @@
 
 Tags:
 
-* `latest`, `cpu` CPU-only. [Dockerfile](cpu/Dockerfile)
-* `gpu` GPU supported. [Dockerfile](gpu/Dockerfile)
-* `cuda8-cudnn7-conda3-py3-pytorch` [Dockerfile](cuda8-cudnn7-conda3-py3-pytorch/Dockerfile)
-* `cuda8-py2-caffe2-detectron` For Facebook's [Detectron](https://github.com/facebookresearch/Detectron) [Dockerfile](cuda8-py2-caffe2-detectron/Dockerfile). 
+* `latest`, `py3-tf1.7.0` CPU-only. [Dockerfile](cpu/Dockerfile).
+* `cuda8-py3-tf1.4.1` [Dockerfile](gpu/Dockerfile).
+* `cuda8-cudnn7-conda3-py3-pytorch` [Dockerfile](cuda8-cudnn7-conda3-py3-pytorch/Dockerfile).
+* `cuda8-py2-caffe2-detectron` For Facebook's [Detectron](https://github.com/facebookresearch/Detectron). [Dockerfile](cuda8-py2-caffe2-detectron/Dockerfile). 
 
 **Step 1**: pull pre-built images:
 
