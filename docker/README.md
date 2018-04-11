@@ -6,6 +6,7 @@ Tags:
 
 * `latest`, `cpu` CPU-only. [Dockerfile](cpu/Dockerfile)
 * `gpu` GPU supported. [Dockerfile](gpu/Dockerfile)
+* `cuda8-cudnn7-conda3-py3-pytorch` [Dockerfile](cuda8-cudnn7-conda3-py3-pytorch/Dockerfile)
 
 **Step 1**: pull pre-built images:
 
