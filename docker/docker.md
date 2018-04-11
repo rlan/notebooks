@@ -4,8 +4,8 @@
 
 Tags:
 
-* `latest`, `cpu` CPU-only. [Dockerfile](docker/cpu/Dockerfile)
-* `gpu` GPU supported. [Dockerfile](docker/gpu/Dockerfile)
+* `latest`, `cpu` CPU-only. [Dockerfile](cpu/Dockerfile)
+* `gpu` GPU supported. [Dockerfile](gpu/Dockerfile)
 
 **Step 1**: pull pre-built images:
 
@@ -33,7 +33,7 @@ where:
         http://localhost:8888/?token=<token string>
 ```
 
-**Step bonus***: Use next generation Jupyter:
+**Step bonus***: Use next generation [Jupyter](http://jupyterlab.readthedocs.io/en/latest/):
 
 After jupyter home page is loaded, i.e. `http://localhost:8888/tree`, browse to `http://localhost:8888/lab`.
 
