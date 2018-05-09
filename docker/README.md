@@ -16,6 +16,7 @@ Keras:
 
 * `py3-tf1.7.1-keras` CPU-only. [Dockerfile](py3-tf1.7.1-keras/Dockerfile).
 * `py3-tf1.7.0-keras` CPU-only. [Dockerfile](py3-tf1.7.0-keras/Dockerfile).
+* `cuda8dnn6-py3-tf1.4.1-keras-tensorlayer` [Dockerfile](cuda8dnn6-py3-tf1.4.1-keras-tensorlayer/Dockerfile).
 * `cuda8-py3-tf1.4.1-keras` [Dockerfile](cuda8-py3-tf1.4.1-keras/Dockerfile).
 
 PyTorch:
