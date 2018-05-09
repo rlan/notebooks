@@ -14,6 +14,7 @@ Caffe:
 
 Keras:
 
+* `py3-tf1.7.1-keras` CPU-only. [Dockerfile](py3-tf1.7.1-keras/Dockerfile).
 * `py3-tf1.7.0-keras` CPU-only. [Dockerfile](py3-tf1.7.0-keras/Dockerfile).
 * `cuda8-py3-tf1.4.1-keras` [Dockerfile](cuda8-py3-tf1.4.1-keras/Dockerfile).
 
@@ -24,6 +25,7 @@ PyTorch:
 Tensorflow:
 
 * `latest`, `py3-tf1.7.1` CPU-only. [Dockerfile](py3-tf1.7.1/Dockerfile).
+* `py3-tf1.7.0` CPU-only. [Dockerfile](py3-tf1.7.0/Dockerfile).
 * `py3-tf1.4.1` CPU-only. [Dockerfile](py3-tf1.4.1/Dockerfile).
 * `cuda8-py3-tf1.4.1` [Dockerfile](cuda8-py3-tf1.4.1/Dockerfile).
 
