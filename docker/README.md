@@ -2,6 +2,12 @@
 
 [Pre-built](https://hub.docker.com/r/wqael/notebooks/) docker images are available for running notebooks in this repo.
 
+![](https://img.shields.io/docker/automated/wqael/notebooks.svg)
+![](https://img.shields.io/docker/build/wqael/notebooks.svg)
+![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
+![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
+
+
 # Tags
 
 Conda:
@@ -28,6 +34,8 @@ Tensorflow:
 * `py3-tf1.4.1` CPU-only. [Dockerfile](py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.4.1 )
 * `cuda8-py3-tf1.4.1` [Dockerfile](cuda8-py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-py3-tf1.4.1 )
 
+
+# Usage
 
 **Step 1**: pull pre-built images:
 
