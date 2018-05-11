@@ -18,6 +18,7 @@
 [Conda](https://conda.io/miniconda.html):
 
 * `cuda8dnn7-conda3-py3` [Dockerfile](docker/cuda8dnn7-conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3)
+* `cuda8dnn7-conda2-py2` [Dockerfile](docker/cuda8dnn7-conda2-py2/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda2-py2)
 
 [Caffe](https://caffe2.ai/):
 
