@@ -17,27 +17,27 @@
 
 Conda:
 
-* `cuda8-cudnn7-conda3-py3` [Dockerfile](cuda8-cudnn7-conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-cudnn7-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-cudnn7-conda3-py3 )
+* `cuda8dnn7-conda3-py3` [Dockerfile](docker/cuda8dnn7-conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3)
 
 Caffe:
 
-* `cuda8-py2-caffe2-detectron` For Facebook's [Detectron](https://github.com/facebookresearch/Detectron). [Dockerfile](cuda8-py2-caffe2-detectron/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-py2-caffe2-detectron.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-py2-caffe2-detectron )
+* `cuda8dnn7-py2-caffe2-detectron` For Facebook's [Detectron](https://github.com/facebookresearch/Detectron). [Dockerfile](docker/cuda8dnn7-py2-caffe2-detectron/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-py2-caffe2-detectron.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-py2-caffe2-detectron)
 
 Keras:
 
-* `py3-tf1.7.1-keras` CPU-only. [Dockerfile](py3-tf1.7.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.7.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.7.1-keras )
-* `cuda8dnn6-py3-tf1.4.1-keras-tensorlayer` [Dockerfile](cuda8dnn6-py3-tf1.4.1-keras-tensorlayer/Dockerfile).
-* `cuda8-py3-tf1.4.1-keras` [Dockerfile](cuda8-py3-tf1.4.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-py3-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-py3-tf1.4.1-keras )
+* `py3-tf1.7.1-keras` CPU-only. [Dockerfile](docker/py3-tf1.7.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.7.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.7.1-keras)
+* `cuda8dnn6-py3-tf1.4.1-keras-tensorlayer` [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1-keras-tensorlayer/Dockerfile).
+* `cuda8dnn6-py3-tf1.4.1-keras` [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras)
 
 PyTorch:
 
-* `cuda8-cudnn7-conda3-py3-pytorch` [Dockerfile](cuda8-cudnn7-conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-cudnn7-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-cudnn7-conda3-py3-pytorch )
+* `cuda8dnn7-conda3-py3-pytorch` [Dockerfile](docker/cuda8dnn7-conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch)
 
 Tensorflow:
 
-* `latest`, `py3-tf1.7.1` CPU-only. [Dockerfile](py3-tf1.7.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.7.1.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.7.1 )
-* `py3-tf1.4.1` CPU-only. [Dockerfile](py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.4.1 )
-* `cuda8-py3-tf1.4.1` [Dockerfile](cuda8-py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-py3-tf1.4.1 )
+* `latest`, `py3-tf1.7.1` CPU-only. [Dockerfile](docker/py3-tf1.7.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.7.1.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.7.1)
+* `py3-tf1.4.1` CPU-only. [Dockerfile](docker/py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.4.1)
+* `cuda8dnn6-py3-tf1.4.1` [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py3-tf1.4.1)
 
 
 # Usage

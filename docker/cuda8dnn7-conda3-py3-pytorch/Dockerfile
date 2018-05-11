@@ -1,6 +1,6 @@
-FROM tensorflow/tensorflow:1.7.0-py3
+FROM wqael/notebooks:cuda8dnn7-conda3-py3
 
-LABEL description="Prebuilt jupyter environment on tensorflow on Ubuntu."
+LABEL description="Prebuilt jupyter environment"
 LABEL maintainer="https://github.com/rlan/notebooks"
 
 # Build-time metadata as defined at http://label-schema.org
@@ -13,14 +13,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-RUN pip --no-cache-dir install -q --upgrade pip \
-    && pip --no-cache-dir install -q -U \
-        jupyterlab \
-        scikit-image
-
-# TensorBoard
-EXPOSE 6006
-# IPython
-EXPOSE 8888
+RUN /opt/conda/bin/conda install pytorch torchvision -c pytorch --quiet && \
+    /opt/conda/bin/conda clean -ya --quiet
 
 WORKDIR /notebooks
