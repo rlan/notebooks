@@ -17,6 +17,7 @@
 
 [Conda](https://conda.io/miniconda.html):
 
+* `conda3-py3` CPU-only. [Dockerfile](docker/conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3)
 * `cuda8dnn7-conda3-py3` [Dockerfile](docker/cuda8dnn7-conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3)
 * `cuda8dnn7-conda2-py2` [Dockerfile](docker/cuda8dnn7-conda2-py2/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda2-py2)
 
@@ -32,6 +33,7 @@
 
 [PyTorch](https://pytorch.org/):
 
+* `conda3-py3-pytorch` CPU-only. [Dockerfile](docker/conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3-pytorch)
 * `cuda8dnn7-conda3-py3-pytorch` [Dockerfile](docker/cuda8dnn7-conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch)
 
 [Tensorflow](https://www.tensorflow.org/):
