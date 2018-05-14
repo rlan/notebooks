@@ -35,6 +35,7 @@
 [PyTorch](https://pytorch.org/):
 
 * `conda3-py3-pytorch` CPU-only. [Dockerfile](docker/conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3-pytorch)
+* `conda2-py2-pytorch` CPU-only. [Dockerfile](docker/conda2-py2-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:conda2-py2-pytorch)
 * `cuda8dnn7-conda3-py3-pytorch` [Dockerfile](docker/cuda8dnn7-conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch)
 
 [Tensorflow](https://www.tensorflow.org/):
