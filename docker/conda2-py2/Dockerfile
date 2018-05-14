@@ -29,6 +29,8 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \
       jupyter \
       matplotlib \
       numpy \
+      opencv \
+      pandas \
       scipy \
       scikit-learn \
       scikit-image \
@@ -36,4 +38,17 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \
     /opt/conda/bin/conda clean -ya --quiet
 ENV PATH /opt/conda/bin:$PATH
 
+# Set up our notebook config.
+COPY jupyter_notebook_config.py /root/.jupyter/
+
+# Jupyter has issues with being run directly:
+#   https://github.com/ipython/ipython/issues/7062
+# We just add a little wrapper script.
+COPY run_jupyter.sh /
+
+# IPython
+EXPOSE 8888
+
 WORKDIR /notebooks
+
+CMD ["/run_jupyter.sh", "--allow-root"]
