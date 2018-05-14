@@ -13,7 +13,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-RUN conda install pytorch torchvision -c pytorch --quiet && \
+RUN conda install pytorch-cpu torchvision-cpu -c pytorch --quiet && \
     conda clean -ya --quiet
 
 WORKDIR /notebooks
