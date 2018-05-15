@@ -24,19 +24,28 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \
     -O ~/miniconda.sh --quiet --no-check-certificate && \
     chmod +x ~/miniconda.sh && \
     ~/miniconda.sh -b -p /opt/conda && \
-    rm ~/miniconda.sh && \
-    /opt/conda/bin/conda install --quiet \
+    rm ~/miniconda.sh
+ENV PATH /opt/conda/bin:$PATH
+
+RUN /opt/conda/bin/conda install --quiet \
+      cython \
+      h5py \
       jupyter \
       matplotlib \
+      msgpack-python \
+      nltk \
       numpy \
       opencv \
       pandas \
+      protobuf \
+      pytables \
       scipy \
       scikit-learn \
       scikit-image \
     && \
     /opt/conda/bin/conda clean -ya --quiet
-ENV PATH /opt/conda/bin:$PATH
+
+RUN pip --no-cache-dir install -q --upgrade pip
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
