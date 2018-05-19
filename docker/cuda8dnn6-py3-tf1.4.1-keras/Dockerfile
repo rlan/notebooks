@@ -14,13 +14,15 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0"
 
 RUN apt-get -qq update \
-    && apt-get -qq install -y \
+    && apt-get -qq install -y --no-install-recommends \
         graphviz \
+        libhdf5-dev \
     && apt-get -qq clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN pip --no-cache-dir install -q --upgrade pip \
     && pip --no-cache-dir install -q -U \
+        h5py \
         keras \
         pydot
 
