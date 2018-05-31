@@ -14,6 +14,9 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0"
 
 RUN conda install pytorch-cpu torchvision-cpu -c pytorch --quiet && \
-    conda clean -ya --quiet
+    conda clean -ya --quiet && \
+    pip --no-cache-dir install -q -U \
+      tensorboardX \
+      visdom
 
 WORKDIR /notebooks
