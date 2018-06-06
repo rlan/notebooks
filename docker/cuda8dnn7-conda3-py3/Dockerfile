@@ -30,7 +30,7 @@ ENV PATH /opt/conda/bin:$PATH
 RUN /opt/conda/bin/conda install --quiet \
       cython \
       h5py \
-      jupyter \
+      jupyterlab \
       matplotlib \
       msgpack-python \
       nltk \
