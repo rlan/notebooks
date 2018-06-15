@@ -1,6 +1,8 @@
-FROM wqael/notebooks:cuda8dnn6-py3-tf1.4.1
+FROM tensorflow/tensorflow:1.4.1-gpu-py3
+# tensorflow 1.5+ needs cuda 9.
+# tensorflow 1.4.1 needs cuda 8.
 
-LABEL description="Prebuilt jupyter environment on GPU-supported tensorflow on Ubuntu."
+LABEL description="Prebuilt jupyter environment based on official GPU tensorflow docker image."
 LABEL maintainer="https://github.com/rlan/notebooks"
 
 # Build-time metadata as defined at http://label-schema.org
@@ -23,8 +25,10 @@ RUN apt-get -qq update \
 RUN pip --no-cache-dir install -q --upgrade pip \
     && pip --no-cache-dir install -q -U \
         h5py \
+        jupyterlab \
         keras \
-        pydot
+        pydot \
+        scikit-image
 
 # TensorBoard
 EXPOSE 6006

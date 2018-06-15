@@ -46,8 +46,8 @@
 [Tensorflow](https://www.tensorflow.org/):
 
 * `latest`, `py3-tf1.7.1` CPU-only. [Dockerfile](docker/py3-tf1.7.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.7.1.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.7.1)
-* `py3-tf1.4.1` CPU-only. [Dockerfile](docker/py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.4.1)
-* `cuda8dnn6-py3-tf1.4.1` [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py3-tf1.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py3-tf1.4.1)
+* `py3-tf1.4.1-keras` CPU-only. [Dockerfile](docker/py3-tf1.4.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.4.1-keras)
+* `cuda8dnn6-py3-tf1.4.1-keras` [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras)
 
 
 # Usage
