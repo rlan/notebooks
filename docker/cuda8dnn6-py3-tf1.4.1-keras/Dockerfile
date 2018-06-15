@@ -1,6 +1,8 @@
 FROM tensorflow/tensorflow:1.4.1-gpu-py3
-# tensorflow 1.5+ needs cuda 9.
-# tensorflow 1.4.1 needs cuda 8.
+# According to Dockerfile for above:
+# https://github.com/tensorflow/tensorflow/blob/v1.4.1/tensorflow/tools/docker/Dockerfile.gpu
+#   FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+#   ...
 
 LABEL description="Prebuilt jupyter environment based on official GPU tensorflow docker image."
 LABEL maintainer="https://github.com/rlan/notebooks"
