@@ -1,7 +1,6 @@
 # A starter kit for Jupyter notebooks
 
-![screenshot](https://user-images.githubusercontent.com/1386868/38400484-2525b10a-398b-11e8-84a6-e9b53611ce05.jpg)
-
+![screenshot](https://user-images.githubusercontent.com/1386868/41513335-1caeb610-72d5-11e8-97a7-43bc21f41754.jpg)
 
 # Docker Images
 
