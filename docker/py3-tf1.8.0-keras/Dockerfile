@@ -17,6 +17,8 @@ RUN apt-get -qq update \
     && apt-get -qq install -y --no-install-recommends \
         graphviz \
         libhdf5-dev \
+        vim \
+        wget \
     && apt-get -qq clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
