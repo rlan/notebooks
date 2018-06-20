@@ -31,6 +31,7 @@ RUN pip --no-cache-dir install -q --upgrade pip \
         h5py \
         jupyterlab \
         keras \
+        opencv-python-headless \
         pydot \
         scikit-image
 
