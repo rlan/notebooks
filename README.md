@@ -1,10 +1,13 @@
-# A starter kit for Jupyter notebooks
+# A starter kit for Jupyter notebooks and machine learning
 
 ![screenshot](https://user-images.githubusercontent.com/1386868/41513335-1caeb610-72d5-11e8-97a7-43bc21f41754.jpg)
 
 # Docker Images
 
-[Pre-built](https://hub.docker.com/r/wqael/notebooks/) docker images are available for running notebooks in this repo.
+Companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are combinations of:
+* python versions
+* machine learning frameworks
+* CUDA/cuDNN versions
 
 ![](https://img.shields.io/docker/automated/wqael/notebooks.svg)
 ![](https://img.shields.io/docker/build/wqael/notebooks.svg)
