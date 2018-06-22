@@ -21,8 +21,8 @@ Companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are combina
 
 * `conda3-py3` CPU-only. [Dockerfile](docker/conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3)
 * `conda2-py2` CPU-only. [Dockerfile](docker/conda2-py2/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:conda2-py2)
-* `cuda8dnn7-conda3-py3` [Dockerfile](docker/cuda8dnn7-conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3)
-* `cuda8dnn7-conda2-py2` [Dockerfile](docker/cuda8dnn7-conda2-py2/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda2-py2)
+* `cuda9dnn7-conda3-py3` [Dockerfile](docker/cuda9dnn7-conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda3-py3)
+* `cuda9dnn7-conda2-py2` [Dockerfile](docker/cuda9dnn7-conda2-py2/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda2-py2)
 * `cuda8dnn6-conda3-py3` [Dockerfile](docker/cuda8dnn6-conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda3-py3)
 * `cuda8dnn6-conda2-py2` [Dockerfile](docker/cuda8dnn6-conda2-py2/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda2-py2)
 
@@ -44,8 +44,8 @@ Companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are combina
 
 * `conda3-py3-pytorch` CPU-only. [Dockerfile](docker/conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3-pytorch)
 * `conda2-py2-pytorch` CPU-only. [Dockerfile](docker/conda2-py2-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:conda2-py2-pytorch)
-* `cuda8dnn7-conda3-py3-pytorch` [Dockerfile](docker/cuda8dnn7-conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda3-py3-pytorch)
-* `cuda8dnn7-conda2-py2-pytorch` [Dockerfile](docker/cuda8dnn7-conda2-py2-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-conda2-py2-pytorch)
+* `cuda9dnn7-conda3-py3-pytorch` [Dockerfile](docker/cuda9dnn7-conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda3-py3-pytorch)
+* `cuda9dnn7-conda2-py2-pytorch` [Dockerfile](docker/cuda9dnn7-conda2-py2-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda2-py2-pytorch)
 * `cuda8dnn6-conda3-py3-pytorch` [Dockerfile](docker/cuda8dnn6-conda3-py3-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda3-py3-pytorch)
 * `cuda8dnn6-conda2-py2-pytorch` [Dockerfile](docker/cuda8dnn6-conda2-py2-pytorch/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda2-py2-pytorch)
 
