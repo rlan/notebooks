@@ -1,4 +1,4 @@
-FROM wqael/notebooks:cuda8dnn7-conda2-py2
+FROM wqael/notebooks:cuda9dnn7-conda3-py3
 
 LABEL description="Prebuilt jupyter environment"
 LABEL maintainer="https://github.com/rlan/notebooks"
