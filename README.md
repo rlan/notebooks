@@ -4,10 +4,16 @@
 
 # Docker Images
 
-Companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are combinations of:
-* python versions
-* machine learning frameworks
-* CUDA/cuDNN versions
+To suppor both old and new environments, companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are various combinations of:
+* python versions (2.x and 3.x)
+* machine learning frameworks (Keras, Tensorflow, PyTorch)
+* CUDA/cuDNN versions (v9/v7 and v8/v6)
+
+All of them include vision-centric libraries, such as:
+* jupyter
+* opencv
+* scikit-image
+* tensorBoardX for PyTorch
 
 ![](https://img.shields.io/docker/automated/wqael/notebooks.svg)
 ![](https://img.shields.io/docker/build/wqael/notebooks.svg)
