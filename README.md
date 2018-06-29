@@ -9,16 +9,16 @@
 ![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
 ![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
 
-To suppor both old and new environments, companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are various combinations of:
-* python versions (2.x and 3.x)
-* machine learning frameworks (Keras, Tensorflow, PyTorch)
-* CUDA/cuDNN versions (v9/v7 and v8/v6)
+To support both old and new environments, companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are various combinations of
+* [python](https://www.python.org/) versions (2.x and 3.x)
+* machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
+* [CUDA](https://developer.nvidia.com/cuda-zone)/[cuDNN](https://developer.nvidia.com/cudnn) versions (v9/v7 and v8/v6)
 
-All of them include vision-centric libraries, such as:
-* jupyter
-* opencv
-* scikit-image
-* tensorBoardX for PyTorch
+All of them include vision-centric libraries, such as
+* [jupyter](http://jupyter.org/)
+* [OpenCV](https://opencv.org/)
+* [scikit-image](http://scikit-image.org/)
+* [tensorBoardX](https://github.com/lanpa/tensorboard-pytorch) for [PyTorch](https://pytorch.org/)
 
 
 # Tags
@@ -78,7 +78,7 @@ where:
 
 **Step 3**: From the log, copy-and-paste the line similar to the following to your favorite browser:
 
-```sh
+```
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
         http://localhost:8888/?token=<token string>
