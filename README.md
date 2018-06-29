@@ -4,6 +4,11 @@
 
 # Docker Images
 
+![](https://img.shields.io/docker/automated/wqael/notebooks.svg)
+![](https://img.shields.io/docker/build/wqael/notebooks.svg)
+![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
+![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
+
 To suppor both old and new environments, companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are various combinations of:
 * python versions (2.x and 3.x)
 * machine learning frameworks (Keras, Tensorflow, PyTorch)
@@ -14,11 +19,6 @@ All of them include vision-centric libraries, such as:
 * opencv
 * scikit-image
 * tensorBoardX for PyTorch
-
-![](https://img.shields.io/docker/automated/wqael/notebooks.svg)
-![](https://img.shields.io/docker/build/wqael/notebooks.svg)
-![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
-![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
 
 
 # Tags
