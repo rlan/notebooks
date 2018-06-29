@@ -70,6 +70,12 @@ docker pull wqael/notebooks:<tag>
 docker run -it -v $2:/notebooks -p 8888:8888 -p 6006:6006 $1
 ```
 
+or, for GPU support
+
+```sh
+nvidia-docker run -it -v $2:/notebooks -p 8888:8888 -p 6006:6006 $1
+```
+
 where:
 
 * `$1` is the docker tag for this image, e.g. `wqael/notebooks:latest`.
