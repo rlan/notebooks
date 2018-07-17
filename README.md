@@ -38,8 +38,11 @@ All of them include vision-centric libraries, such as
 
 [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/)
 
-* `latest`, `py3-tf1.8.0-keras` CPU-only. [Dockerfile](docker/py3-tf1.8.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.8.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.8.0-keras)
+* `latest`, `py3-tf1.9.0-keras` CPU-only. [Dockerfile](docker/py3-tf1.9.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.9.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.9.0-keras)
+* `py3-tf1.8.0-keras` CPU-only. [Dockerfile](docker/py3-tf1.8.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.8.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.8.0-keras)
 * `py3-tf1.4.1-keras` CPU-only. [Dockerfile](docker/py3-tf1.4.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.4.1-keras)
+* `cuda9dnn7-py3-tf1.9.0-keras` [Dockerfile](docker/cuda9dnn7-py3-tf1.9.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-py3-tf1.9.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-py3-tf1.9.0-keras)
+* `cuda9dnn7-py2-tf1.9.0-keras` [Dockerfile](docker/cuda9dnn7-py2-tf1.9.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-py2-tf1.9.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-py2-tf1.9.0-keras)
 * `cuda9dnn7-py3-tf1.8.0-keras` [Dockerfile](docker/cuda9dnn7-py3-tf1.8.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-py3-tf1.8.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-py3-tf1.8.0-keras)
 * `cuda9dnn7-py2-tf1.8.0-keras` [Dockerfile](docker/cuda9dnn7-py2-tf1.8.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-py2-tf1.8.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-py2-tf1.8.0-keras)
 * `cuda8dnn6-py3-tf1.4.1-keras` [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1-keras/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras)
