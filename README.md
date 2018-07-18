@@ -23,6 +23,8 @@ All of them include vision-centric libraries, such as
 
 # Tags
 
+If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefiles will not work. Please go to the github [project page](https://github.com/rlan/notebooks).
+
 [Conda](https://conda.io/miniconda.html)
 
 * `conda3-py3` CPU-only. [Dockerfile](docker/conda3-py3/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3)
