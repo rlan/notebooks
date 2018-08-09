@@ -14,12 +14,13 @@ To support both old and new environments, companion [docker images](https://hub.
 * machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
 * [CUDA](https://developer.nvidia.com/cuda-zone)/[cuDNN](https://developer.nvidia.com/cudnn) versions (v9/v7 and v8/v6)
 
-All of them include vision-centric libraries, such as
+All of images include vision-centric libraries, such as
 * [jupyter](http://jupyter.org/)
 * [OpenCV](https://opencv.org/)
 * [scikit-image](http://scikit-image.org/)
 * [tensorBoardX](https://github.com/lanpa/tensorboard-pytorch) for [PyTorch](https://pytorch.org/)
 
+Choose a CUDA version that matches the NVidia graphics driver version installed on your system. Here is a compatibility [chart](https://gist.github.com/rlan/258b7c030364735be10c9df277cff5ed).
 
 # Tags
 
