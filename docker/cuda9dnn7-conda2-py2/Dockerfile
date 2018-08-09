@@ -1,4 +1,4 @@
-FROM nvidia/cuda:9.2-cudnn7-runtime-ubuntu16.04
+FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
 LABEL description="Prebuilt jupyter environment"
 LABEL maintainer="https://github.com/rlan/notebooks"
