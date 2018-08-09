@@ -16,6 +16,7 @@
 [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/)
 
 * `latest` Bleeding-edge, CPU-optimized. [Dockerfile](docker/latest/Dockerfile) [![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest)
+* `mkldnn-py3-tf1.9.0-keras` CPU-only. [Dockerfile](docker/mkldnn-py3-tf1.9.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/commit/wqael/notebooks:mkldnn-py3-tf1.9.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:mkldnn-py3-tf1.9.0-keras)
 * `py3-tf1.10.0-keras` CPU-only. [Dockerfile](docker/py3-tf1.10.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.10.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.10.0-keras)
 * `py3-tf1.9.0-keras` CPU-only. [Dockerfile](docker/py3-tf1.9.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.9.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.9.0-keras)
 * `py3-tf1.8.0-keras` CPU-only. [Dockerfile](docker/py3-tf1.8.0-keras/Dockerfile) [![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.8.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.8.0-keras)
