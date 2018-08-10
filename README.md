@@ -48,7 +48,7 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 
 | Tag   | Comment | Dockerfile | Info  |
 | ----- | ------- | ---------- | ----  |
-| `latest` | AVX-FMA-SSE-optimized | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
+| `latest` | TF 1.9.0, AVX-FMA-SSE [1] | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
 | `mkldnn-py3-tf1.9.0-keras` | Intel MKL-DNN | [Dockerfile](docker/mkldnn-py3-tf1.9.0-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:mkldnn-py3-tf1.9.0-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:mkldnn-py3-tf1.9.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:mkldnn-py3-tf1.9.0-keras) |
 | `py3-tf1.10.0-keras` | CPU-only | [Dockerfile](docker/py3-tf1.10.0-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.10.0-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.10.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.10.0-keras) |
 | `py3-tf1.9.0-keras` | CPU-only | [Dockerfile](docker/py3-tf1.9.0-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.9.0-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.9.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.9.0-keras) |
@@ -63,6 +63,8 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 | `cuda8dnn6-py3-tf1.4.1-keras` | | [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras) |
 | `cuda8dnn6-py3-tf1.4.1-keras-tensorlayer` | | [Dockerfile](docker/cuda8dnn6-py3-tf1.4.1-keras-tensorlayer/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras-tensorlayer.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras-tensorlayer.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py3-tf1.4.1-keras-tensorlayer) |
 | `cuda8dnn6-py2-tf1.4.1-keras` | | [Dockerfile](docker/cuda8dnn6-py2-tf1.4.1-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-py2-tf1.4.1-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn6-py2-tf1.4.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-py2-tf1.4.1-keras) |
+
+[1] Custom Tensorflow build by [lakshayg](https://github.com/lakshayg/tensorflow-build).
 
 ### [PyTorch](https://pytorch.org/)
 
