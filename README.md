@@ -24,7 +24,7 @@ Choose a CUDA version that matches the NVidia graphics driver version installed 
 
 ## Tags
 
-If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefiles will not work. Please go to the github [project page](https://github.com/rlan/notebooks).
+If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefiles will not work. Please go to the github [project page](https://github.com/rlan/notebooks) instead.
 
 ### [Conda](https://conda.io/miniconda.html)
 
