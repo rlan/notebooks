@@ -4,6 +4,9 @@ FROM ubuntu:16.04
 LABEL description="Prebuilt jupyter and tensorflow environment"
 LABEL maintainer="https://github.com/rlan/notebooks"
 
+# Custome build TensorFlow binaries supporting FMA, AVX, SSE instructions
+ARG TENSORFLOW_BINARY="https://github.com/lakshayg/tensorflow-build/releases/download/tf1.10.0-ubuntu16.04-py35-py27/tensorflow-1.10.0-cp35-cp35m-linux_x86_64.whl"
+
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
 ARG VCS_REF
@@ -15,7 +18,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0"
 
 # Pick up some TF dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
         ca-certificates \
         curl \
         python3 \
@@ -28,10 +32,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+# Install pip
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py && \
     rm get-pip.py
 
+# Install python libraries
 RUN pip --no-cache-dir install \
         Pillow \
         ipykernel \
@@ -54,8 +60,8 @@ RUN pip --no-cache-dir install \
 # Make python run python3
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 100
 
-# TensorFlow binaries supporting AVX, FMA, SSE
-RUN pip install --ignore-installed --upgrade "https://github.com/lakshayg/tensorflow-build/releases/download/tf1.9.0-ubuntu16.04-py27-py35/tensorflow-1.9.0-cp35-cp35m-linux_x86_64.whl"
+# Install TensorFlow
+RUN pip install --ignore-installed --upgrade ${TENSORFLOW_BINARY}
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
@@ -72,4 +78,4 @@ EXPOSE 8888
 
 WORKDIR /notebooks
 
-CMD ["/run_jupyter.sh", "--allow-root"]
+CMD ["/run_jupyter.sh", "--allow-root", "--no-browser"]
