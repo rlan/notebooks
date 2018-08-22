@@ -1,6 +1,6 @@
 # A starter kit for Jupyter notebooks and machine learning
 
-![screenshot](https://user-images.githubusercontent.com/1386868/41513335-1caeb610-72d5-11e8-97a7-43bc21f41754.jpg)
+![notebooks_screenshot](assets/notebooks.jpg)
 
 ## Docker Images
 
@@ -100,7 +100,7 @@ nvidia-docker run -it -v $2:/notebooks -p 8888:8888 -p 6006:6006 $1
 
 where:
 
-* `$1` is the docker tag for this image, e.g. `wqael/notebooks:latest`.
+* `$1` is the tag for a docker image, e.g. `wqael/notebooks:latest`.
 * `$2` is the folder containing the notebooks on the host file system, e.g. clone this repo and use `~/notebooks`.
 
 
@@ -116,7 +116,7 @@ where:
 
 After jupyter home page is loaded, i.e. `http://localhost:8888/tree`, browse to `http://localhost:8888/lab`.
 
-![jupyter_lab_screenshot](https://user-images.githubusercontent.com/1386868/38536941-ce8effb0-3cc6-11e8-936b-fe5d80fdc660.jpg)
+![jupyter_lab_screenshot](assets/jupyter_lab.jpg)
 
 **Step 4**: How to shutdown the docker image:
 
