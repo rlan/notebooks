@@ -5,7 +5,7 @@ LABEL description="Prebuilt jupyter and tensorflow environment"
 LABEL maintainer="https://github.com/rlan/notebooks"
 
 # Custome build TensorFlow binaries supporting FMA, AVX, SSE instructions
-ARG TENSORFLOW_BINARY="https://github.com/lakshayg/tensorflow-build/releases/download/tf1.10.0-ubuntu16.04-py35-py27/tensorflow-1.10.0-cp35-cp35m-linux_x86_64.whl"
+ARG TENSORFLOW_BINARY="https://github.com/lakshayg/tensorflow-build/releases/download/tf1.11.0-ubuntu16.04-py2.7-py3.5/tensorflow-1.11.0-cp35-cp35m-linux_x86_64.whl"
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -49,13 +49,15 @@ RUN pip --no-cache-dir install \
         sklearn \
         h5py \
         jupyterlab \
-        keras \
         nltk \
         opencv-python-headless \
         pydot \
         scikit-image \
-        && \
-    python3 -m ipykernel.kernelspec
+    && pip --no-cache-dir install -q -U \
+        keras_applications==1.0.5 \
+        keras_preprocessing==1.0.3 \
+        --no-deps \
+    && python3 -m ipykernel.kernelspec
 
 # Make python run python3
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 100
