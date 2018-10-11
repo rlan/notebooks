@@ -39,24 +39,22 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
 
 # Install python libraries
 RUN pip --no-cache-dir install \
-        Pillow \
+        h5py \
         ipykernel \
         jupyter \
+        jupyterlab \
+        keras \
         matplotlib \
+        nltk \
         numpy \
+        opencv-python-headless \
         pandas \
+        Pillow \
+        pydot \
+        pyyaml \
+        scikit-image \
         scipy \
         sklearn \
-        h5py \
-        jupyterlab \
-        nltk \
-        opencv-python-headless \
-        pydot \
-        scikit-image \
-    && pip --no-cache-dir install -q -U \
-        keras_applications==1.0.5 \
-        keras_preprocessing==1.0.3 \
-        --no-deps \
     && python3 -m ipykernel.kernelspec
 
 # Make python run python3
