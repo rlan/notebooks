@@ -26,14 +26,11 @@ RUN pip --no-cache-dir install -q --upgrade pip \
     && pip --no-cache-dir install -q -U \
         h5py \
         jupyterlab \
+        keras \
         opencv-python-headless \
         pydot \
-        scikit-image \
-    && pip --no-cache-dir install -q -U \
-        keras_applications==1.0.5 \
-        keras_preprocessing==1.0.3 \
-        --no-deps
-
+        pyyaml \
+        scikit-image
 
 # TensorBoard
 EXPOSE 6006
