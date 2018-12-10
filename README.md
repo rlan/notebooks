@@ -26,18 +26,6 @@ Choose a CUDA version that matches the NVidia graphics driver version installed 
 
 If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefiles will not work. Please go to the github [project page](https://github.com/rlan/notebooks) instead.
 
-### [Conda](https://conda.io/miniconda.html)
-
-| Tag   | Comment | Dockerfile | Info  |
-| ----- | ------- | ---------- | ----  |
-| `conda3-py3` | CPU-only | [Dockerfile](docker/conda3-py3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3) |
-| `conda2-py2` | CPU-only | [Dockerfile](docker/conda2-py2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda2-py2.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:conda2-py2) |
-| `cuda9dnn7-conda3-py3` | | [Dockerfile](docker/cuda9dnn7-conda3-py3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda3-py3.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9dnn7-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda3-py3) |
-| `cuda9dnn7-conda2-py2` | | [Dockerfile](docker/cuda9dnn7-conda2-py2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda2-py2.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9dnn7-conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda2-py2) |
-| `cuda8dnn6-conda3-py3` | | [Dockerfile](docker/cuda8dnn6-conda3-py3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda3-py3.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn6-conda3-py3.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda3-py3) |
-| `cuda8dnn6-conda2-py2` | | [Dockerfile](docker/cuda8dnn6-conda2-py2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda2-py2.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn6-conda2-py2.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda2-py2) |
-
-
 ### [Caffe](https://caffe2.ai/)
 
 | Tag   | Comment | Dockerfile | Info  |
@@ -61,18 +49,21 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 
 | Tag   | Comment | Dockerfile | Info  |
 | ----- | ------- | ---------- | ----  |
-| `conda3-py3-pytorch` | CPU-only | [Dockerfile](docker/conda3-py3-pytorch/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3-pytorch.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3-pytorch) |
-| `conda2-py2-pytorch` | CPU-only | [Dockerfile](docker/conda2-py2-pytorch/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda2-py2-pytorch.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:conda2-py2-pytorch) |
-| `cuda9dnn7-conda3-py3-pytorch` | | [Dockerfile](docker/cuda9dnn7-conda3-py3-pytorch/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda3-py3-pytorch.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9dnn7-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda3-py3-pytorch) |
-| `cuda9dnn7-conda2-py2-pytorch` | | [Dockerfile](docker/cuda9dnn7-conda2-py2-pytorch/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9dnn7-conda2-py2-pytorch.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9dnn7-conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda9dnn7-conda2-py2-pytorch) |
-| `cuda8dnn6-conda3-py3-pytorch` | | [Dockerfile](docker/cuda8dnn6-conda3-py3-pytorch/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda3-py3-pytorch.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn6-conda3-py3-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda3-py3-pytorch) |
-| `cuda8dnn6-conda2-py2-pytorch` | | [Dockerfile](docker/cuda8dnn6-conda2-py2-pytorch/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn6-conda2-py2-pytorch.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn6-conda2-py2-pytorch.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn6-conda2-py2-pytorch) |
+| `conda3-py3-pytorch1.0` | CPU-only | [Dockerfile](docker/conda3-py3-pytorch1.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3-pytorch1.0.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda3-py3-pytorch1.0.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3-pytorch1.0) |
+| `conda2-py2-pytorch1.0` | CPU-only | [Dockerfile](docker/conda2-py2-pytorch1.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda2-py2-pytorch1.0.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda2-py2-pytorch1.0.svg)](https://microbadger.com/images/wqael/notebooks:conda2-py2-pytorch1.0) |
+| `cuda9-conda3-py3-pytorch1.0` | | [Dockerfile](docker/cuda9-conda3-py3-pytorch1.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9-conda3-py3-pytorch1.0.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9-conda3-py3-pytorch1.0.svg)](https://microbadger.com/images/wqael/notebooks:cuda9-conda3-py3-pytorch1.0) |
+| `cuda9-conda2-py2-pytorch1.0` | | [Dockerfile](docker/cuda9-conda2-py2-pytorch1.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9-conda2-py2-pytorch1.0.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9-conda2-py2-pytorch1.0.svg)](https://microbadger.com/images/wqael/notebooks:cuda9-conda2-py2-pytorch1.0) |
+| `cuda8-conda3-py3-pytorch1.0` | | [Dockerfile](docker/cuda8-conda3-py3-pytorch1.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-conda3-py3-pytorch1.0.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8-conda3-py3-pytorch1.0.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-conda3-py3-pytorch1.0) |
+| `cuda8-conda2-py2-pytorch1.0` | | [Dockerfile](docker/cuda8-conda2-py2-pytorch1.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-conda2-py2-pytorch1.0.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8-conda2-py2-pytorch1.0.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-conda2-py2-pytorch1.0) |
 
 
+### Internal Tags
+
+Internal intermediate Docker images, from which other images are build upon. See [docker/INTERNAL.md](docker/INTERNAL.md).
 
 ### Deprecated Tags
 
-See [docker/DEPRECATED.md](docker/DEPRECATED.md).
+For older versions, see [docker/DEPRECATED.md](docker/DEPRECATED.md).
 
 
 ## Usage

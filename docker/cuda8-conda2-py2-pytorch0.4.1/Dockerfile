@@ -1,4 +1,4 @@
-FROM wqael/notebooks:cuda8dnn6-conda2-py2
+FROM wqael/notebooks:cuda8-conda2-py2
 
 LABEL description="Prebuilt jupyter environment"
 LABEL maintainer="https://github.com/rlan/notebooks"
@@ -13,7 +13,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-RUN conda install pytorch torchvision -c pytorch --quiet && \
+RUN conda install pytorch=0.4.1 torchvision -c pytorch --quiet && \
     conda clean -ya --quiet && \
     pip --no-cache-dir install -q -U \
       tensorboardX \

@@ -1,6 +1,18 @@
 ## Deprecated Tags
 
 
+### [PyTorch](https://pytorch.org/)
+
+| Tag   | Comment | Dockerfile | Info  |
+| ----- | ------- | ---------- | ----  |
+| `conda3-py3-pytorch0.4.1` | CPU-only | [Dockerfile](docker/conda3-py3-pytorch0.4.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda3-py3-pytorch0.4.1.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda3-py3-pytorch0.4.1.svg)](https://microbadger.com/images/wqael/notebooks:conda3-py3-pytorch0.4.1) |
+| `conda2-py2-pytorch0.4.1` | CPU-only | [Dockerfile](docker/conda2-py2-pytorch0.4.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:conda2-py2-pytorch0.4.1.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:conda2-py2-pytorch0.4.1.svg)](https://microbadger.com/images/wqael/notebooks:conda2-py2-pytorch0.4.1) |
+| `cuda9-conda3-py3-pytorch0.4.1` | | [Dockerfile](docker/cuda9-conda3-py3-pytorch0.4.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9-conda3-py3-pytorch0.4.1.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9-conda3-py3-pytorch0.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda9-conda3-py3-pytorch0.4.1) |
+| `cuda9-conda2-py2-pytorch0.4.1` | | [Dockerfile](docker/cuda9-conda2-py2-pytorch0.4.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda9-conda2-py2-pytorch0.4.1.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda9-conda2-py2-pytorch0.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda9-conda2-py2-pytorch0.4.1) |
+| `cuda8-conda3-py3-pytorch0.4.1` | | [Dockerfile](docker/cuda8-conda3-py3-pytorch0.4.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-conda3-py3-pytorch0.4.1.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8-conda3-py3-pytorch0.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-conda3-py3-pytorch0.4.1) |
+| `cuda8-conda2-py2-pytorch0.4.1` | | [Dockerfile](docker/cuda8-conda2-py2-pytorch0.4.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8-conda2-py2-pytorch0.4.1.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8-conda2-py2-pytorch0.4.1.svg)](https://microbadger.com/images/wqael/notebooks:cuda8-conda2-py2-pytorch0.4.1) |
+
+
 
 ### [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/)
 
