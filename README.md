@@ -37,6 +37,7 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 | Tag   | Comment | Dockerfile | Info  |
 | ----- | ------- | ---------- | ----  |
 | `jupyter-keras-tf1.12.0-conda3` | CPU-only | [Dockerfile](docker/jupyter-keras-tf1.12.0-conda3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.12.0-conda3.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:jupyter-keras-tf1.12.0-conda3.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.12.0-conda3) |
+| `jupyter-keras-tf1.12.0-conda2` | CPU-only | [Dockerfile](docker/jupyter-keras-tf1.12.0-conda2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.12.0-conda2.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:jupyter-keras-tf1.12.0-conda2.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.12.0-conda2) |
 | `jupyter-keras-tf1.12.0-conda3-cuda9` | | [Dockerfile](docker/jupyter-keras-tf1.12.0-conda3-cuda9/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.12.0-conda3-cuda9.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:jupyter-keras-tf1.12.0-conda3-cuda9.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.12.0-conda3-cuda9) |
 | `jupyter-keras-tf1.12.0-conda2-cuda9` | | [Dockerfile](docker/jupyter-keras-tf1.12.0-conda2-cuda9/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.12.0-conda2-cuda9.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:jupyter-keras-tf1.12.0-conda2-cuda9.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.12.0-conda2-cuda9) |
 | `jupyter-keras-tf1.4.1-conda3-cuda8` | | [Dockerfile](docker/jupyter-keras-tf1.4.1-conda3-cuda8/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.4.1-conda3-cuda8.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:jupyter-keras-tf1.4.1-conda3-cuda8.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.4.1-conda3-cuda8) |
@@ -56,7 +57,7 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 
 ### Internal Tags
 
-Internal intermediate Docker images, from which other images are build upon. See [docker/INTERNAL.md](docker/INTERNAL.md).
+For intermediate Docker images, from which final images are build from, see [docker/INTERNAL.md](docker/INTERNAL.md).
 
 ### Deprecated Tags
 
