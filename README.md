@@ -18,7 +18,6 @@ All of images include vision-centric libraries, such as
 * [jupyter](http://jupyter.org/)
 * [OpenCV](https://opencv.org/)
 * [scikit-image](http://scikit-image.org/)
-* [tensorBoardX](https://github.com/lanpa/tensorboard-pytorch) for [PyTorch](https://pytorch.org/)
 
 Choose a CUDA version that matches the NVidia graphics driver version installed on your system. Here is a compatibility [chart](https://gist.github.com/rlan/258b7c030364735be10c9df277cff5ed).
 
