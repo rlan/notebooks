@@ -25,6 +25,11 @@ Choose a CUDA version that matches the NVidia graphics driver version installed 
 
 If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefiles will not work. Please go to the github [project page](https://github.com/rlan/notebooks) instead.
 
+
+| Tag   | Comment | Dockerfile | Info  |
+| ----- | ------- | ---------- | ----  |
+| `latest` | CPU-only. Jupyter, PyTorch 1.0, Keras, TF 1.12.0. | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
+
 ### [Caffe](https://caffe2.ai/)
 
 | Tag   | Comment | Dockerfile | Info  |

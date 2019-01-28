@@ -1,11 +1,8 @@
-# Modified from https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/Dockerfile
-FROM ubuntu:16.04
+FROM wqael/notebooks:pytorch1.0-keras-tf1.12.0-conda3
 
-LABEL description="Prebuilt jupyter and tensorflow environment"
-LABEL maintainer="https://github.com/rlan/notebooks"
+LABEL description="Jupyter / PyTorch / Keras / Tensorflow / Conda 3 / ubuntu16.04" \
+      maintainer="https://github.com/rlan/notebooks"
 
-# Custome build TensorFlow binaries supporting FMA, AVX, SSE instructions
-ARG TENSORFLOW_BINARY="https://github.com/lakshayg/tensorflow-build/releases/download/tf1.11.0-ubuntu16.04-py2.7-py3.5/tensorflow-1.11.0-cp35-cp35m-linux_x86_64.whl"
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -17,51 +14,17 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-# Pick up some TF dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        ca-certificates \
-        curl \
-        python3 \
-        python3-setuptools \
-        graphviz \
-        libhdf5-dev \
-        vim \
-        wget \
-        && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-# Install pip
-RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
-    python3 get-pip.py && \
-    rm get-pip.py
-
-# Install python libraries
-RUN pip --no-cache-dir install \
-        h5py \
-        ipykernel \
-        jupyter \
-        jupyterlab \
-        keras \
-        matplotlib \
-        nltk \
-        numpy \
-        opencv-python-headless \
-        pandas \
-        Pillow \
-        pydot \
-        pyyaml \
-        scikit-image \
-        scipy \
-        sklearn \
-    && python3 -m ipykernel.kernelspec
-
-# Make python run python3
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 100
-
-# Install TensorFlow
-RUN pip install --ignore-installed --upgrade ${TENSORFLOW_BINARY}
+RUN conda install --quiet \
+      jupyterlab \
+      matplotlib \
+      opencv \
+      pillow \
+      scikit-learn \
+      scikit-image \
+    && conda clean -tipsy \
+    && pip --no-cache-dir install -q -U \
+      tensorboardX \
+      visdom
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
@@ -78,4 +41,4 @@ EXPOSE 8888
 
 WORKDIR /notebooks
 
-CMD ["/run_jupyter.sh", "--allow-root", "--no-browser"]
+CMD ["/run_jupyter.sh", "--allow-root"]

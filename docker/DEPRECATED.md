@@ -18,7 +18,6 @@
 
 | Tag   | Comment | Dockerfile | Info  |
 | ----- | ------- | ---------- | ----  |
-| `latest` | CPU-only, TF 1.11.0, AVX-FMA-SSE [1] | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
 | `py3-tf1.12.0-keras` | CPU-only | [Dockerfile](docker/py3-tf1.12.0-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.12.0-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.12.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.12.0-keras) |
 | `py3-tf1.11.0-keras` | CPU-only | [Dockerfile](docker/py3-tf1.11.0-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.11.0-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.11.0-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.11.0-keras) |
 | `py3-tf1.10.1-keras` | CPU-only | [Dockerfile](docker/py3-tf1.10.1-keras/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:py3-tf1.10.1-keras.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:py3-tf1.10.1-keras.svg)](https://microbadger.com/images/wqael/notebooks:py3-tf1.10.1-keras) |
