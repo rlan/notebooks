@@ -2,12 +2,11 @@
 
 PROJECT="wqael/notebooks"
 
-build() {
+rmi() {
 	echo "[[ $1 ]]"
-	BUILD_CMD="docker build -t $PROJECT:$1 ."
-	cd $1 && $BUILD_CMD && cd ..
+    docker rmi "$PROJECT:$1"
 }
 
 while IFS='' read -r line || [[ -n "$line" ]]; do
-    build "$line"
+    rmi "$1"
 done < "$1"

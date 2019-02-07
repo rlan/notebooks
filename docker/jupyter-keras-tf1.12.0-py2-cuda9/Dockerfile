@@ -1,9 +1,13 @@
-FROM tensorflow/tensorflow:1.12.0-gpu-py3
-# According to docker inspect:
-# CUDA_VERSION=9.0.176
+FROM tensorflow/tensorflow:1.12.0-gpu
+# According to Dockerfile for above:
+# https://github.com/tensorflow/tensorflow/blob/v1.11.0/tensorflow/tools/docker/Dockerfile.gpu
+# FROM nvidia/cuda:9.0-base-ubuntu16.04
+# ...
+#     libcudnn7=7.2.1.38-1+cuda9.0 \
+#     ...
 
-LABEL description="Prebuilt jupyter environment based on official GPU-supported tensorflow docker image."
-LABEL maintainer="https://github.com/rlan/notebooks"
+LABEL description="Prebuilt jupyter environment based on official GPU-supported tensorflow docker image." \
+      maintainer="https://github.com/rlan/notebooks"
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE

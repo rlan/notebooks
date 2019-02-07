@@ -1,6 +1,6 @@
-FROM wqael/notebooks:pytorch1.0-conda2-cuda8
+FROM wqael/notebooks:pytorch1.0-py3
 
-LABEL description="Jupyter / PyTorch / Conda 2 / nvidia/cuda:8.0-cudnn7-runtime-ubuntu16.04" \
+LABEL description="Jupyter / PyTorch / Python 3 / ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -14,15 +14,13 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-RUN conda install --quiet \
+RUN pip --no-cache-dir install --upgrade \
       jupyterlab \
       matplotlib \
       opencv \
       pillow \
       scikit-learn \
       scikit-image \
-    && conda clean -tipsy \
-    && pip --no-cache-dir install -q -U \
       visdom
 
 # Set up our notebook config.

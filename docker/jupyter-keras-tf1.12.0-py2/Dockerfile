@@ -1,7 +1,7 @@
-FROM tensorflow/tensorflow:1.12.0-py3
+FROM tensorflow/tensorflow:1.12.0
 
-LABEL description="Prebuilt jupyter environment based on official tensorflow docker image."
-LABEL maintainer="https://github.com/rlan/notebooks"
+LABEL description="Prebuilt jupyter environment based on official tensorflow docker image." \
+      maintainer="https://github.com/rlan/notebooks"
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE

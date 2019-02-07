@@ -1,6 +1,6 @@
 FROM wqael/notebooks:pytorch1.0-conda3-cuda8
 
-LABEL description="Jupyter / PyTorch / Conda 3 / nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04" \
+LABEL description="Jupyter / PyTorch / Conda 3 / nvidia/cuda:8.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 

@@ -1,6 +1,6 @@
-FROM wqael/notebooks:conda3-cuda8
+FROM wqael/notebooks:conda3-cuda9
 
-LABEL description="Keras / Tensorflow / Conda / nvidia/cuda:8.0-cudnn7-runtime-ubuntu16.04" \
+LABEL description="Keras / Tensorflow / Conda / nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 # Build-time metadata as defined at http://label-schema.org

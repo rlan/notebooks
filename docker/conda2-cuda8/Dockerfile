@@ -1,6 +1,6 @@
 FROM nvidia/cuda:8.0-cudnn7-runtime-ubuntu16.04
 
-LABEL description="Conda 2 / nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04" \
+LABEL description="Conda 2 / nvidia/cuda:8.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 ARG CONDA_INSTALLER="https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh"
