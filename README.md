@@ -34,7 +34,7 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 
 | Tag   | Comment | Dockerfile | Info  |
 | ----- | ------- | ---------- | ----  |
-| `cuda8dnn7-py2-caffe2-detectron` | For Facebook's [Detectron](https://github.com/facebookresearch/Detectron) | [Dockerfile](docker/cuda8dnn7-py2-caffe2-detectron/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:cuda8dnn7-py2-caffe2-detectron.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:cuda8dnn7-py2-caffe2-detectron.svg)](https://microbadger.com/images/wqael/notebooks:cuda8dnn7-py2-caffe2-detectron) |
+| | Facebook's [Detectron](https://github.com/facebookresearch/Detectron) uses Caffe | Detectron's [Dockerfile](https://github.com/facebookresearch/Detectron/blob/master/docker/Dockerfile) | |
 
 ### [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/)
 
