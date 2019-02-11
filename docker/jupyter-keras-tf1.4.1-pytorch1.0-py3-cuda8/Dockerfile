@@ -13,9 +13,10 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-RUN pip --no-cache-dir install -q --upgrade pip \
-    && pip --no-cache-dir install -q -U \
-        torch torchvision \
+RUN pip --no-cache-dir install -q \
+      https://download.pytorch.org/whl/cu80/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl \
+    && pip --no-cache-dir install -q \
+        torchvision \
         tensorboardX \
         visdom
 
