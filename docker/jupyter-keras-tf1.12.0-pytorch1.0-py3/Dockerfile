@@ -13,12 +13,17 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-RUN pip --no-cache-dir install -q \
+RUN pip --no-cache-dir install -q --upgrade pip \
+    && pip --no-cache-dir install -q -U \
       https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl \
-    && pip --no-cache-dir install -q \
+    && pip --no-cache-dir install -q -U \
         torchvision \
         tensorboardX \
         visdom
+
+# typing: https://github.com/pytorch/pytorch/issues/16775
+RUN pip --no-cache-dir install -q -U \
+      typing
 
 # TensorBoard
 EXPOSE 6006

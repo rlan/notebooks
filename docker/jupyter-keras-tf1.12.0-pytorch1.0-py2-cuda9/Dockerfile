@@ -15,9 +15,13 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 RUN pip --no-cache-dir install -q --upgrade pip \
     && pip --no-cache-dir install -q -U \
-        torch torchvision \
-        tensorboardX \
-        visdom
+      torch torchvision \
+      tensorboardX \
+      visdom
+
+# typing: https://github.com/pytorch/pytorch/issues/16775
+RUN pip --no-cache-dir install -q -U \
+      typing
 
 # TensorBoard
 EXPOSE 6006

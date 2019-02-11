@@ -19,6 +19,10 @@ RUN pip --no-cache-dir install -q --upgrade pip \
         tensorboardX \
         visdom
 
+# typing: https://github.com/pytorch/pytorch/issues/16775
+RUN pip --no-cache-dir install -q -U \
+      typing
+
 # TensorBoard
 EXPOSE 6006
 # IPython
