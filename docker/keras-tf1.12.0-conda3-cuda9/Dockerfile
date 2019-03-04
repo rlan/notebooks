@@ -1,4 +1,4 @@
-FROM wqael/notebooks:conda3-cuda9
+FROM wqael/docker:conda3-cuda9
 
 LABEL description="Keras / Tensorflow / Conda / nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
@@ -14,12 +14,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0"
 
 RUN conda install --quiet \
-      tensorflow=1.12.0 \
-    && conda install --quiet \
-      graphviz \
-      h5py \
-      keras \
-      pydot \
+      keras-gpu \
+      tensorflow-gpu=1.12.0 \
     && conda clean -tipsy
 
 # TensorBoard

@@ -1,0 +1,4 @@
+keras-tf1.12.0-conda3-cuda9
+keras-tf1.12.0-conda2-cuda9
+keras-tf1.4.1-conda3-cuda8
+keras-tf1.4.1-conda2-cuda8
