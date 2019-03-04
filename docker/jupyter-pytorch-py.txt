@@ -1,6 +1,6 @@
 jupyter-pytorch1.0-py3-cuda9
 jupyter-pytorch1.0-py2-cuda9
-jupyter-pytorch1.0-py3-cuda8
-jupyter-pytorch1.0-py2-cuda8
 jupyter-pytorch1.0-py3
 jupyter-pytorch1.0-py2
+jupyter-pytorch1.0-py3-cuda8
+jupyter-pytorch1.0-py2-cuda8
