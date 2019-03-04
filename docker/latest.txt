@@ -1,3 +1,2 @@
-keras-tf1.12.0-conda3
-pytorch1.0-keras-tf1.12.0-conda3
 latest
+latest-gpu

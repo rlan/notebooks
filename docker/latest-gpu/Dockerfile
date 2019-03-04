@@ -1,6 +1,6 @@
-FROM tensorflow/tensorflow:1.13.1-py3
+FROM tensorflow/tensorflow:1.12.0-gpu-py3
 
-LABEL description="Jupyter / PyTorch / Keras / tensorflow/tensorflow:1.13.1-py3" \
+LABEL description="Jupyter / PyTorch / Keras / tensorflow/tensorflow:1.12.0-gpu-py3" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -35,9 +35,7 @@ RUN pip --no-cache-dir install -q -U \
         scikit-image
 
 RUN pip --no-cache-dir install -q -U \
-        https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl
-RUN pip --no-cache-dir install -q -U \
-        torchvision \
+        torch torchvision \
         tensorboardX \
         visdom
 

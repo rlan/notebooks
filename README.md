@@ -28,7 +28,8 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 
 | Tag   | Comment | Dockerfile | Info |
 | ----- | ------- | ---------- | ---- |
-| `latest` | CPU-only. Jupyter, PyTorch 1.0, Keras, TF 1.12.0. | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
+| `latest` | CPU-only. Jupyter, PyTorch 1.0, Keras, TF 1.13.1. | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
+| `latest-gpu` | CUDA 9. Jupyter, PyTorch 1.0, Keras, TF 1.12.0. | [Dockerfile](docker/latest-gpu/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest-gpu.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest-gpu.svg)](https://microbadger.com/images/wqael/notebooks:latest-gpu) |
 
 ### [Caffe](https://caffe2.ai/)
 
