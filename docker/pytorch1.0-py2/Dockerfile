@@ -27,11 +27,11 @@ RUN apt-get update && apt-get install -y \
     && apt-get -qq clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN ${PIP} --no-cache-dir install --upgrade \
-    pip \
-    setuptools
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+      pip \
+      setuptools
 
-RUN ${PIP} --no-cache-dir install --upgrade \
-    torch torchvision \
-    tensorboardX \
-    visdom
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+      https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp27-cp27mu-linux_x86_64.whl \
+    && ${PIP} --no-cache-dir install -q --upgrade \
+      torchvision

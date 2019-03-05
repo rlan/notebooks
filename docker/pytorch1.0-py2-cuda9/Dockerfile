@@ -1,7 +1,7 @@
 # Based on https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/cpu.Dockerfile
-FROM ubuntu:16.04
+FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
-LABEL description="PyTorch / Python 3 / ubuntu16.04" \
+LABEL description="PyTorch / Python 2 / nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -15,8 +15,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-ARG PYTHON=python3
-ARG PIP=pip3
+ARG PYTHON=python
+ARG PIP=pip
 
 # See http://bugs.python.org/issue19846
 ENV LANG C.UTF-8
@@ -27,14 +27,9 @@ RUN apt-get update && apt-get install -y \
     && apt-get -qq clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Make python run python3
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 100
-
-RUN ${PIP} --no-cache-dir install --upgrade \
+RUN ${PIP} --no-cache-dir install -q --upgrade \
       pip \
       setuptools
 
-RUN ${PIP} --no-cache-dir install --upgrade \
-      https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl \
-    && ${PIP} --no-cache-dir install --upgrade \
-      torchvision
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+      torch torchvision

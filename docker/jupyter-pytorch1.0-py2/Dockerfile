@@ -1,6 +1,6 @@
-FROM wqael/notebooks:pytorch1.0-py3
+FROM wqael/notebooks:pytorch1.0-py2
 
-LABEL description="Jupyter / PyTorch / Python 3 / ubuntu16.04" \
+LABEL description="Jupyter / PyTorch / Python 2 / ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -14,8 +14,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-ARG PYTHON=python3
-ARG PIP=pip3
+ARG PYTHON=python
+ARG PIP=pip
 
 RUN ${PIP} --no-cache-dir install -q -U \
       jupyterlab \

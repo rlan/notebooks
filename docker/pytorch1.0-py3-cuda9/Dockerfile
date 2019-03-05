@@ -1,7 +1,7 @@
 # Based on https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/cpu.Dockerfile
-FROM ubuntu:16.04
+FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
-LABEL description="PyTorch / Python 3 / ubuntu16.04" \
+LABEL description="PyTorch / Python 3 / nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -30,11 +30,9 @@ RUN apt-get update && apt-get install -y \
 # Make python run python3
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 100
 
-RUN ${PIP} --no-cache-dir install --upgrade \
+RUN ${PIP} --no-cache-dir install -q --upgrade \
       pip \
       setuptools
 
-RUN ${PIP} --no-cache-dir install --upgrade \
-      https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl \
-    && ${PIP} --no-cache-dir install --upgrade \
-      torchvision
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+      torch torchvision
