@@ -1,0 +1,2 @@
+jupyter-keras-tf1.13.1-py3-cuda10
+jupyter-keras-tf1.13.1-py2-cuda10
