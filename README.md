@@ -73,11 +73,11 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 
 ### Internal Tags
 
-For intermediate Docker images, from which final images are build from, see [docker/INTERNAL.md](docker/INTERNAL.md).
+For intermediate Docker images, from which final images are build from, see [INTERNAL.md](INTERNAL.md).
 
 ### Deprecated Tags
 
-For older versions, see [docker/DEPRECATED.md](docker/DEPRECATED.md).
+For older versions, see [DEPRECATED.md](DEPRECATED.md).
 
 
 ## Usage
