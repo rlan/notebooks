@@ -1,4 +1,4 @@
-FROM wqael/notebooks:conda2
+FROM wqael/docker:conda2
 
 LABEL description="PyTorch / Conda 2 / ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
