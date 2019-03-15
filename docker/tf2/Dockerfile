@@ -17,7 +17,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 # Install TensorFlow
 RUN pip --no-cache-dir install -q -U \
-        tensorflow-gpu==2.0.0-alpha0
+        tensorflow==2.0.0-alpha0
 
 # Install libraries
 RUN pip --no-cache-dir install -q -U \
