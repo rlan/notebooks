@@ -1,2 +1,0 @@
-pytorch1.0-py3
-pytorch1.0-py2

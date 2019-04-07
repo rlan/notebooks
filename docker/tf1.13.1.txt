@@ -1,2 +1,0 @@
-jupyter-keras-tf1.13.1-py3
-jupyter-keras-tf1.13.1-py2
