@@ -1,6 +1,6 @@
-FROM tensorflow/tensorflow:1.13.1-py3
+FROM wqael/mldock:latest
 
-LABEL description="Jupyter / PyTorch / Keras / tensorflow/tensorflow:1.13.1-py3" \
+LABEL description="Jupyter / PyTorch 1.1 / Keras / tensorflow/tensorflow:1.13.1-py3 (Python 3.5.2 / Ubuntu 16.04.5 LTS)" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -14,32 +14,16 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-RUN apt-get -qq update \
-    && apt-get -qq install -y --no-install-recommends \
-        graphviz \
-        libhdf5-dev \
-        vim \
-        wget \
-    && apt-get -qq clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ARG PYTHON=python3
+ARG PIP=pip3
 
-RUN pip --no-cache-dir install -q -U \
-        pip setuptools \
-    && pip --no-cache-dir install -q -U \
-        h5py \
-        jupyterlab \
-        keras \
-        opencv-python-headless \
-        pydot \
-        pyyaml \
-        scikit-image
-
-RUN pip --no-cache-dir install -q -U \
-        https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp35-cp35m-linux_x86_64.whl
-RUN pip --no-cache-dir install -q -U \
-        torchvision \
-        tensorboardX \
-        visdom
+RUN ${PIP} --no-cache-dir install -q -U \
+      jupyterlab \
+      matplotlib \
+      opencv-python-headless \
+      pillow \
+      scikit-learn \
+      scikit-image
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
