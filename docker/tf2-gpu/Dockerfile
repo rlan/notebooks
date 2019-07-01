@@ -1,4 +1,4 @@
-FROM wqael/notebooks:py3-cuda9
+FROM wqael/docker:py3-cuda9
 
 LABEL description="Jupyter / Tensorflow 2 / Python 3 / nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
@@ -17,7 +17,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 # Install TensorFlow
 RUN pip --no-cache-dir install -q -U \
-        tensorflow-gpu==2.0.0-alpha0
+        tensorflow-gpu==2.0.0-beta1
 
 # Install libraries
 RUN pip --no-cache-dir install -q -U \
