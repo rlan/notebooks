@@ -1,6 +1,6 @@
-FROM wqael/mldock:latest
+FROM wqael/mldock:pytorch1.2-conda2
 
-LABEL description="Jupyter / PyTorch 1.2 / Keras / tensorflow/tensorflow:1.14.0-py3 (Python 3.6.8 / Ubuntu 16.04.5 LTS)" \
+LABEL description="Jupyter / PyTorch 1.2 / Conda 2 / ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -14,16 +14,14 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-ARG PYTHON=python3
-ARG PIP=pip3
-
-RUN ${PIP} --no-cache-dir install -q -U \
+RUN conda install --quiet \
       jupyterlab \
       matplotlib \
-      opencv-python-headless \
+      opencv \
       pillow \
       scikit-learn \
-      scikit-image
+      scikit-image \
+    && conda clean -aqy
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
@@ -33,8 +31,6 @@ COPY jupyter_notebook_config.py /root/.jupyter/
 # We just add a little wrapper script.
 COPY run_jupyter.sh /
 
-# TensorBoard
-EXPOSE 6006
 # IPython
 EXPOSE 8888
 

@@ -1,6 +1,6 @@
-FROM wqael/mldock:latest
+FROM wqael/mldock:pytorch1.2-py2-cuda10
 
-LABEL description="Jupyter / PyTorch 1.2 / Keras / tensorflow/tensorflow:1.14.0-py3 (Python 3.6.8 / Ubuntu 16.04.5 LTS)" \
+LABEL description="Jupyter / PyTorch 1.2 / Python 2 / nvidia/cuda:10.0-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -14,8 +14,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-ARG PYTHON=python3
-ARG PIP=pip3
+ARG PYTHON=python
+ARG PIP=pip
 
 RUN ${PIP} --no-cache-dir install -q -U \
       jupyterlab \
@@ -33,8 +33,6 @@ COPY jupyter_notebook_config.py /root/.jupyter/
 # We just add a little wrapper script.
 COPY run_jupyter.sh /
 
-# TensorBoard
-EXPOSE 6006
 # IPython
 EXPOSE 8888
 

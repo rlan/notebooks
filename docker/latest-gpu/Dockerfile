@@ -1,6 +1,6 @@
 FROM wqael/mldock:latest-gpu
 
-LABEL description="Jupyter / PyTorch 1.1 / Keras / tensorflow/tensorflow:1.14.0-gpu-py3 (Python 3.6.8 / Ubuntu 16.04.5 LTS)" \
+LABEL description="Jupyter / PyTorch 1.2 / Keras / tensorflow/tensorflow:1.14.0-gpu-py3 (Python 3.6.8 / Ubuntu 16.04.5 LTS)" \
       maintainer="https://github.com/rlan/notebooks"
 
 
