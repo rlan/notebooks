@@ -29,8 +29,8 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 
 | Tag   | Comment | Dockerfile | Info |
 | ----- | ------- | ---------- | ---- |
-| `latest` | CPU-only. Jupyter. PyTorch 1.1, Keras, TF 1.14.0. | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
-| `latest-gpu` | CUDA 10. Jupyter. PyTorch 1.1, Keras, TF 1.14.0. | [Dockerfile](docker/latest-gpu/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest-gpu.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest-gpu.svg)](https://microbadger.com/images/wqael/notebooks:latest-gpu) |
+| `latest` | CPU-only. Jupyter. PyTorch 1.2, Keras, TF 1.14.0. | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
+| `latest-gpu` | CUDA 10. Jupyter. PyTorch 1.2, Keras, TF 1.14.0. | [Dockerfile](docker/latest-gpu/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest-gpu.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:latest-gpu.svg)](https://microbadger.com/images/wqael/notebooks:latest-gpu) |
 | `tf2` | CPU. Jupyter. TF 2.0 beta1. | [Dockerfile](docker/tf2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:tf2.svg)](https://microbadger.com/images/wqael/notebooks:tf2) |
 | `tf2-gpu` | CUDA 9. Jupyter. TF 2.0 beta1. | [Dockerfile](docker/tf2-gpu/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2-gpu.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:tf2-gpu.svg)](https://microbadger.com/images/wqael/notebooks:tf2-gpu) |
 
