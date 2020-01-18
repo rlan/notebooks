@@ -1,6 +1,6 @@
 FROM wqael/mldock:latest-gpu
 
-LABEL description="Jupyter / PyTorch 1.2 / Keras / tensorflow/tensorflow:1.14.0-gpu-py3 (Python 3.6.8 / Ubuntu 16.04.5 LTS)" \
+LABEL description="PyTorch 1.4 / Keras 2.3.1 / TensorFlow 1.15.0 / Python 3.5 / Nvidia CUDA 10.1 / Ubuntu 16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -16,14 +16,23 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 ARG PYTHON=python3
 ARG PIP=pip3
+# Skips tzdata configuration
+ARG DEBIAN_FRONTEND=noninteractive
 
-RUN ${PIP} --no-cache-dir install -q -U \
+RUN apt-get -qq update \
+    && apt-get -qq install -y --no-install-recommends \
+        python3-pandas \
+    && apt-get -qq clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN ${PIP} --no-cache-dir install -q --upgrade \
       jupyterlab \
       matplotlib \
       opencv-python-headless \
       pillow \
       scikit-learn \
-      scikit-image
+      scikit-image \
+      seaborn
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/

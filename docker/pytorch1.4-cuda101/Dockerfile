@@ -1,6 +1,6 @@
-FROM wqael/mldock:latest
+FROM wqael/mldock:pytorch1.4-cuda101
 
-LABEL description="PyTorch 1.4 / Keras 2.3.1 / tensorflow/tensorflow:1.15.0-py3 (Python 3.6.8 / Ubuntu 16.04.5 LTS)" \
+LABEL description="Jupyter / PyTorch 1.4 / Python 3.5 / nvidia/cuda:10.1-cudnn7-runtime-ubuntu16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
 
@@ -16,8 +16,6 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 ARG PYTHON=python3
 ARG PIP=pip3
-# Skips tzdata configuration
-ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get -qq update \
     && apt-get -qq install -y --no-install-recommends \
@@ -25,7 +23,7 @@ RUN apt-get -qq update \
     && apt-get -qq clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN ${PIP} --no-cache-dir install -q --upgrade \
+RUN ${PIP} --no-cache-dir install -q -U \
       jupyterlab \
       matplotlib \
       opencv-python-headless \
@@ -42,8 +40,6 @@ COPY jupyter_notebook_config.py /root/.jupyter/
 # We just add a little wrapper script.
 COPY run_jupyter.sh /
 
-# TensorBoard
-EXPOSE 6006
 # IPython
 EXPOSE 8888
 

@@ -1,8 +1,10 @@
-FROM wqael/mldock:latest
+FROM tensorflow/tensorflow:2.1.0-gpu-py3
 
-LABEL description="PyTorch 1.4 / Keras 2.3.1 / tensorflow/tensorflow:1.15.0-py3 (Python 3.6.8 / Ubuntu 16.04.5 LTS)" \
+LABEL description="Jupyter / Tensorflow 2.1.0 / CUDA 10.1 / Python 3 / Ubuntu 16.04" \
       maintainer="https://github.com/rlan/notebooks"
 
+# Avoid configuring tzdata
+ARG DEBIAN_FRONTEND=noninteractive
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -14,25 +16,24 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-ARG PYTHON=python3
-ARG PIP=pip3
-# Skips tzdata configuration
-ARG DEBIAN_FRONTEND=noninteractive
-
 RUN apt-get -qq update \
     && apt-get -qq install -y --no-install-recommends \
         python3-pandas \
     && apt-get -qq clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN ${PIP} --no-cache-dir install -q --upgrade \
-      jupyterlab \
-      matplotlib \
-      opencv-python-headless \
-      pillow \
-      scikit-learn \
-      scikit-image \
-      seaborn
+RUN pip --no-cache-dir install -q --upgrade \
+        pip \
+        setuptools \
+        wheel
+RUN pip --no-cache-dir install -q --upgrade \
+        jupyterlab \
+        matplotlib \
+        opencv-python-headless \
+        pillow \
+        scikit-learn \
+        scikit-image \
+        seaborn
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
