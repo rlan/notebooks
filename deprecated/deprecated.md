@@ -33,6 +33,9 @@
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `pytorch1.4` | CPU-only | [Dockerfile](pytorch1.4/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.4.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.4) |
+| `pytorch1.4-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](pytorch1.4-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.4-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.4-cuda101) |
+| `pytorch1.4-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](pytorch1.4-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.4-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.4-cuda92) |
 | `jupyter-pytorch1.3-py3` | CPU-only | [Dockerfile](jupyter-pytorch1.3-py3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.3-py3.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.3-py3) |
 | `jupyter-pytorch1.3-py3-cuda92` | Nvidia Driver >= 396.37 | [Dockerfile](jupyter-pytorch1.3-py3-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.3-py3-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.3-py3-cuda92) |
 | `jupyter-pytorch1.2-py3` | CPU-only | [Dockerfile](jupyter-pytorch1.2-py3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.2-py3.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:jupyter-pytorch1.2-py3.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.2-py3) |
