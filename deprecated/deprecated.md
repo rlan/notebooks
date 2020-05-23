@@ -7,6 +7,8 @@
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `tf2.1.0` | CPU-only | [Dockerfile](tf2.1.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.1.0.svg)](https://microbadger.com/images/wqael/notebooks:tf2.1.0) |
+| `tf2.1.0-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](tf2.1.0-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.1.0-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:tf2.1.0-cuda101) |
 | `tf2.0.0` | CPU-only | [Dockerfile](tf2.0.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.0.0.svg)](https://microbadger.com/images/wqael/notebooks:tf2.0.0) |
 | `tf2` | CPU. Jupyter. TF 2.0 beta1. | [Dockerfile](tf2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:tf2.svg)](https://microbadger.com/images/wqael/notebooks:tf2) |
 | `tf2-gpu` | CUDA 9. Jupyter. TF 2.0 beta1. | [Dockerfile](tf2-gpu/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2-gpu.svg) ![](https://images.microbadger.com/badges/commit/wqael/notebooks:tf2-gpu.svg)](https://microbadger.com/images/wqael/notebooks:tf2-gpu) |
