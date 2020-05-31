@@ -1,4 +1,4 @@
-# A starter kit for Jupyter notebooks and machine learning
+# A docker-based starter kit for machine learning via jupyter notebooks
 
 ![notebooks_screenshot](assets/notebooks.jpg)
 
@@ -7,7 +7,7 @@
 ![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
 ![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
 
-To support both old and new environments, companion [docker images](https://hub.docker.com/r/wqael/notebooks/) are various combinations of
+To support both old and new environments, [docker images](https://hub.docker.com/r/wqael/notebooks/) covers various combinations of
 * machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
 * [CUDA](https://developer.nvidia.com/cuda-zone) v8, v9 and v10.
 
