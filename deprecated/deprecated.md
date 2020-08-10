@@ -35,6 +35,9 @@
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `pytorch1.5.1` | CPU-only | [Dockerfile](pytorch1.5.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.5.1.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.5.1) |
+| `pytorch1.5.1-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](pytorch1.5.1-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.5.1-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.5.1-cuda101) |
+| `pytorch1.5.1-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](pytorch1.5.1-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.5.1-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.5.1-cuda92) |
 | `pytorch1.5` | CPU-only | [Dockerfile](pytorch1.5/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.5.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.5) |
 | `pytorch1.5-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](pytorch1.5-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.5-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.5-cuda101) |
 | `pytorch1.5-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](pytorch1.5-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.5-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.5-cuda92) |
