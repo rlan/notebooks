@@ -24,10 +24,8 @@ RUN apt-get -qq update \
     && apt-get -qq clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN pip --no-cache-dir install -q --upgrade \
-        pip \
-        setuptools \
-        wheel
+RUN pip --no-cache-dir install -q --upgrade pip setuptools wheel
+        
 RUN pip --no-cache-dir --use-feature=2020-resolver install -q --upgrade \
         h5py \
         jupyterlab \
@@ -40,7 +38,12 @@ RUN pip --no-cache-dir --use-feature=2020-resolver install -q --upgrade \
         pyyaml \
         scikit-learn \
         scikit-image \
-        seaborn
+        seaborn \
+        tornado
+
+# jupyter-tensorboard need tornado first
+RUN pip --no-cache-dir install -q --upgrade --use-feature=2020-resolver \
+        jupyter-tensorboard
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
