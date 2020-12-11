@@ -41,6 +41,11 @@
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `pytorch1.7` | CPU-only | [Dockerfile](pytorch1.7/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7) |
+| `pytorch1.7-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](pytorch1.7-cuda11/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7-cuda11.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7-cuda11) |
+| `pytorch1.7-cuda102` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.7-cuda102/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7-cuda102.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7-cuda102) |
+| `pytorch1.7-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](pytorch1.7-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7-cuda101) |
+| `pytorch1.7-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](pytorch1.7-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7-cuda92) |
 | `pytorch1.6` | CPU-only | [Dockerfile](pytorch1.6/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.6.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.6) |
 | `pytorch1.6-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](pytorch1.6-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.6-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.6-cuda101) |
 | `pytorch1.6-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](pytorch1.6-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.6-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.6-cuda92) |
