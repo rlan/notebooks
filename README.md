@@ -7,9 +7,12 @@
 ![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
 ![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
 
-To support both old and new environments, [docker images](https://hub.docker.com/r/wqael/notebooks/) covers various combinations of
+To support both old and new environments, [docker images](https://hub.docker.com/r/wqael/notebooks/) cover various combinations of
 * machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
-* [CUDA](https://developer.nvidia.com/cuda-zone) v8, v9 and v10.
+* [CUDA](https://developer.nvidia.com/cuda-zone) v8, v9, v10 and v11.
+
+Check the CUDA compatibility [chart](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver)
+for the required version of Nvidia garphics driver for your host system.
 
 [Python](https://www.python.org/) 3 only as Python 2 is [end-of-life](https://pythonclock.org), so [deprecated](deprecated/deprecated.md).
 
@@ -27,9 +30,6 @@ Vision-centric libraries:
 
 NLP libraries:
 * [Natural Language Toolkit](https://www.nltk.org)
-
-Check the CUDA compatibility [chart](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver)
-for the required version of Nvidia garphics driver for your host system.
 
 ## Tags
 
@@ -102,7 +102,7 @@ For intermediate Docker images, from which final images are build from, see [INT
 
 ### Deprecated Tags
 
-For older versions, see [deprecated/deprecated.md](deprecated/deprecated.md).
+For deprecated tags, see [deprecated/deprecated.md](deprecated/deprecated.md).
 
 
 ## Usage
