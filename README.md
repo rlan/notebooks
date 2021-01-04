@@ -43,13 +43,6 @@ If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/no
 | `latest-gpu` | CUDA 10.1. Jupyter. PyTorch 1.4, Keras, TF 1.15.2. | [Dockerfile](docker/latest-gpu/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest-gpu.svg)](https://microbadger.com/images/wqael/notebooks:latest-gpu) |
 
 
-### [Caffe](https://caffe2.ai/)
-
-| Tag   | Comment | Dockerfile | Info |
-| ----- | ------- | ---------- | ---- |
-| | Facebook's [Detectron](https://github.com/facebookresearch/Detectron) uses Caffe | Detectron's [Dockerfile](https://github.com/facebookresearch/Detectron/blob/master/docker/Dockerfile) | |
-
-
 ### [PyTorch](https://pytorch.org/)
 
 Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).

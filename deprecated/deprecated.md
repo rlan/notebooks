@@ -1,5 +1,16 @@
 # Deprecated Tags
 
+### [Caffe](https://caffe2.ai/)
+
+Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTorch_1_0.html).
+
+| Tag   | Comment | Dockerfile | Info |
+| ----- | ------- | ---------- | ---- |
+| | Facebook's [Detectron](https://github.com/facebookresearch/Detectron) uses Caffe | Detectron's [Dockerfile](https://github.com/facebookresearch/Detectron/blob/master/docker/Dockerfile) | |
+
+
+
+
 ## Python 3
 
 ### [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/)
