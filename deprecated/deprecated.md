@@ -19,6 +19,7 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
 | `tf2.3.1` | CPU-only | [Dockerfile](tf2.3.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.3.1.svg)](https://microbadger.com/images/wqael/notebooks:tf2.3.1) |
+| `tf2.3.1-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](tf2.3.1-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.3.1-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:tf2.3.1-cuda101) |
 | `tf2.3` | CPU-only | [Dockerfile](tf2.3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.3.svg)](https://microbadger.com/images/wqael/notebooks:tf2.3) |
 | `tf2.3-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](tf2.3-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.3-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:tf2.3-cuda101) |
 | `tf2.1.1` | CPU-only | [Dockerfile](tf2.1.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.1.1.svg)](https://microbadger.com/images/wqael/notebooks:tf2.1.1) |
