@@ -16,35 +16,38 @@ usage() {
 }
 
 build() {
-	echo "[[ Building $1 ]]"
-	cd $1
-  docker build -t "$PROJECT:$1" .
+  echo "[[ Building $1 ]]"
+  cd $1
+  docker build \
+        --build-arg VCS_REF=`git rev-parse --short HEAD` \
+        --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
+        -t "$PROJECT:$1" .
   cd ..
 }
 
 pull() {
-	echo "[[ Pulling $1 ]]"
+  echo "[[ Pulling $1 ]]"
   cd $1
   docker pull "$PROJECT:$1"
   cd ..
 }
 
 push() {
-	echo "[[ Pushing $1 ]]"
+  echo "[[ Pushing $1 ]]"
   cd $1
   docker push "$PROJECT:$1"
   cd ..
 }
 
 release() {
-	echo "[[ Releasing $1 ]]"
+  echo "[[ Releasing $1 ]]"
   pull $1
   build $1
   push $1
 }
 
 rmi() {
-	echo "[[ Removing $1 ]]"
+  echo "[[ Removing $1 ]]"
   docker rmi "$PROJECT:$1"
 }
 
