@@ -59,6 +59,9 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `pytorch1.8.0` | CPU-only | [Dockerfile](pytorch1.8.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.8.0.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.8.0) |
+| `pytorch1.8.0-cuda11.1.1` | Nvidia Driver >= 455.32 | [Dockerfile](pytorch1.8.0-cuda11.1.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.8.0-cuda11.1.1.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.8.0-cuda11.1.1) |
+| `pytorch1.8.0-cuda10.2` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.8.0-cuda10.2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.8.0-cuda10.2.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.8.0-cuda10.2) |
 | `pytorch1.7.1` | CPU-only | [Dockerfile](pytorch1.7.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7.1.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7.1) |
 | `pytorch1.7.1-cuda102` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.7.1-cuda102/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7.1-cuda102.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7.1-cuda102) |
 | `pytorch1.7` | CPU-only | [Dockerfile](pytorch1.7/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7) |
