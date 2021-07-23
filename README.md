@@ -1,4 +1,6 @@
-# A docker-based starter kit for machine learning via jupyter notebooks
+# Notebooks
+
+A docker-based starter kit for machine learning via jupyter notebooks. Designed for those who just want a runtime environment and get on with machine learning.
 
 ![notebooks_screenshot](assets/notebooks.jpg)
 
@@ -19,6 +21,7 @@ for the required version of Nvidia garphics driver for your host system.
 All of the images include:
 * [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
 * [scikit-learn](https://scikit-learn.org/stable/)
+* [pandas](https://pandas.pydata.org)
 
 Visualization libraries:
 * [matplotlib](https://matplotlib.org)
@@ -33,7 +36,7 @@ NLP libraries:
 
 ## Tags
 
-If you are reading this page from [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefiles will not work. Please go to the github [project page](https://github.com/rlan/notebooks) instead.
+If you are reading this on [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefile's will not work. Please start from [project page](https://github.com/rlan/notebooks) instead.
 
 ### Experimental
 
