@@ -1,4 +1,4 @@
-FROM wqael/mldock:pytorch1.7.1-cuda92
+FROM wqael/docker:py36-cuda92
 
 LABEL description="Jupyter / PyTorch 1.7.1 / Python 3.6 / nvidia/cuda:9.2-cudnn7-runtime-ubuntu18.04" \
       maintainer="https://github.com/rlan/notebooks"
@@ -27,7 +27,11 @@ RUN apt-get -qq update \
 
 RUN ${PIP} --no-cache-dir install -q --upgrade pip setuptools wheel
 
-RUN ${PIP} --no-cache-dir install -q -U \
+# Install pytorch
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+      torch==1.7.1+cu92 torchvision==0.8.2+cu92 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+RUN ${PIP} --no-cache-dir install -q --upgrade \
       jupyterlab \
       matplotlib \
       nltk \
@@ -37,6 +41,7 @@ RUN ${PIP} --no-cache-dir install -q -U \
       scikit-learn \
       scikit-image \
       seaborn \
+      tensorboard \
       six
 
 # Set up our notebook config.
@@ -49,6 +54,9 @@ COPY run_jupyter.sh /
 
 # IPython
 EXPOSE 8888
+
+# Tensorboard
+EXPOSE 6006
 
 WORKDIR /notebooks
 
