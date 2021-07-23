@@ -31,7 +31,7 @@ RUN ${PIP} --no-cache-dir install -q --upgrade pip setuptools wheel
 RUN ${PIP} --no-cache-dir install -q --upgrade \
       torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 
-RUN ${PIP} --no-cache-dir install -q -U \
+RUN ${PIP} --no-cache-dir install -q --upgrade \
       jupyterlab \
       matplotlib \
       nltk \
@@ -41,6 +41,7 @@ RUN ${PIP} --no-cache-dir install -q -U \
       scikit-learn \
       scikit-image \
       seaborn \
+      tensorboard \
       six
 
 # Set up our notebook config.
@@ -53,6 +54,9 @@ COPY run_jupyter.sh /
 
 # IPython
 EXPOSE 8888
+
+# Tensorboard
+EXPOSE 6006
 
 WORKDIR /notebooks
 
