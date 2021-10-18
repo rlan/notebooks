@@ -75,7 +75,8 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `tf2.5.0` | CPU-only | [Dockerfile](docker/tf2.5.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.5.0.svg)](https://microbadger.com/images/wqael/notebooks:tf2.5.0) |
+| `tf2.6.0` | CPU-only | [Dockerfile](docker/tf2.6.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.6.0.svg)](https://microbadger.com/images/wqael/notebooks:tf2.6.0) |
+| `tf2.6.0-cuda11.2` | Nvidia Driver >= 450.80.02 | [Dockerfile](docker/tf2.6.0-cuda11.2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.6.0-cuda11.2.svg)](https://microbadger.com/images/wqael/notebooks:tf2.6.0-cuda11.2) |
 | `tf2.5.0-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/tf2.5.0-cuda11/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.5.0-cuda11.svg)](https://microbadger.com/images/wqael/notebooks:tf2.5.0-cuda11) |
 | `tf2.3.3-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/tf2.3.3-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.3.3-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:tf2.3.3-cuda101) |
 | `tf2.0.4-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/tf2.0.4-cuda10/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.0.4-cuda10.svg)](https://microbadger.com/images/wqael/notebooks:tf2.0.4-cuda10) |
