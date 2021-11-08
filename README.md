@@ -42,8 +42,8 @@ If you are reading this on [Docker Hub](https://hub.docker.com/r/wqael/notebooks
 
 | Tag   | Comment | Dockerfile | Info |
 | ----- | ------- | ---------- | ---- |
-| `latest` | CPU-only. Jupyter. PyTorch 1.4, Keras, TF 1.15.2. | [Dockerfile](docker/latest/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest.svg)](https://microbadger.com/images/wqael/notebooks:latest) |
-| `latest-gpu` | CUDA 10.1. Jupyter. PyTorch 1.4, Keras, TF 1.15.2. | [Dockerfile](docker/latest-gpu/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:latest-gpu.svg)](https://microbadger.com/images/wqael/notebooks:latest-gpu) |
+| `latest` | CPU-only. Jupyter. PyTorch 1.4, Keras, TF 1.15.2. | [Dockerfile](docker/latest/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/latest) |
+| `latest-gpu` | CUDA 10.1. Jupyter. PyTorch 1.4, Keras, TF 1.15.2. | [Dockerfile](docker/latest-gpu/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/latest-gpu) |
 
 
 ### [PyTorch](https://pytorch.org/)
@@ -52,47 +52,47 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `pytorch1.10.0` | CPU-only | [Dockerfile](docker/pytorch1.10.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.10.0.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.10.0) |
-| `pytorch1.10.0-cuda11.3.1` | Nvidia Driver >= 465.19.01 (Linux) 465.89 (Windows) | [Dockerfile](docker/pytorch1.10.0-cuda11.3.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.10.0-cuda11.3.1.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.10.0-cuda11.3.1) |
-| `pytorch1.10.0-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](docker/pytorch1.10.0-cuda10.2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.10.0-cuda10.2.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.10.0-cuda10.2) |
-| `pytorch1.9.1-cuda11.1.1` | Nvidia Driver >= 455.32 (Linux) 456.81 (Windows) | [Dockerfile](docker/pytorch1.9.1-cuda11.1.1/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.9.1-cuda11.1.1.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.9.1-cuda11.1.1) |
-| `pytorch1.7.1-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/pytorch1.7.1-cuda11/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7.1-cuda11.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7.1-cuda11) |
-| `pytorch1.7.1-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/pytorch1.7.1-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7.1-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7.1-cuda101) |
-| `pytorch1.7.1-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](docker/pytorch1.7.1-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:pytorch1.7.1-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:pytorch1.7.1-cuda92) |
-| `jupyter-pytorch1.2-py3-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/jupyter-pytorch1.2-py3-cuda10/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.2-py3-cuda10.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.2-py3-cuda10) |
-| `jupyter-pytorch1.1-py3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-pytorch1.1-py3-cuda9/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.1-py3-cuda9.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.1-py3-cuda9) |
-| `jupyter-pytorch1.0-py3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-pytorch1.0-py3-cuda8/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.0-py3-cuda8.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.0-py3-cuda8) |
+| `pytorch1.10.0` | CPU-only | [Dockerfile](docker/pytorch1.10.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.10.0) |
+| `pytorch1.10.0-cuda11.3.1` | Nvidia Driver >= 465.19.01 (Linux) 465.89 (Windows) | [Dockerfile](docker/pytorch1.10.0-cuda11.3.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.10.0-cuda11.3.1) |
+| `pytorch1.10.0-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](docker/pytorch1.10.0-cuda10.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.10.0-cuda10.2) |
+| `pytorch1.9.1-cuda11.1.1` | Nvidia Driver >= 455.32 (Linux) 456.81 (Windows) | [Dockerfile](docker/pytorch1.9.1-cuda11.1.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.9.1-cuda11.1.1) |
+| `pytorch1.7.1-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/pytorch1.7.1-cuda11/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.7.1-cuda11) |
+| `pytorch1.7.1-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/pytorch1.7.1-cuda101/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.7.1-cuda101) |
+| `pytorch1.7.1-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](docker/pytorch1.7.1-cuda92/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.7.1-cuda92) |
+| `jupyter-pytorch1.2-py3-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/jupyter-pytorch1.2-py3-cuda10/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.2-py3-cuda10) |
+| `jupyter-pytorch1.1-py3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-pytorch1.1-py3-cuda9/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.1-py3-cuda9) |
+| `jupyter-pytorch1.0-py3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-pytorch1.0-py3-cuda8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.0-py3-cuda8) |
 
 
 | Tag (Conda-based python) | Comment | Dockerfile | Info |
 | ------------------------ | ------- | ---------- | ---- |
-| `jupyter-pytorch1.3-conda3` | CPU-only | [Dockerfile](docker/jupyter-pytorch1.3-conda3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.3-conda3.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.3-conda3) |
-| `jupyter-pytorch1.3-conda3-cuda92` | Nvidia Driver >= 396.37 | [Dockerfile](docker/jupyter-pytorch1.3-conda3-cuda92/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.3-conda3-cuda92.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.3-conda3-cuda92) |
-| `jupyter-pytorch1.1-conda3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-pytorch1.1-conda3-cuda9/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.1-conda3-cuda9.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.1-conda3-cuda9) |
-| `jupyter-pytorch1.0-conda3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-pytorch1.0-conda3-cuda8/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-pytorch1.0-conda3-cuda8.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-pytorch1.0-conda3-cuda8) |
+| `jupyter-pytorch1.3-conda3` | CPU-only | [Dockerfile](docker/jupyter-pytorch1.3-conda3/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.3-conda3) |
+| `jupyter-pytorch1.3-conda3-cuda92` | Nvidia Driver >= 396.37 | [Dockerfile](docker/jupyter-pytorch1.3-conda3-cuda92/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.3-conda3-cuda92) |
+| `jupyter-pytorch1.1-conda3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-pytorch1.1-conda3-cuda9/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.1-conda3-cuda9) |
+| `jupyter-pytorch1.0-conda3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-pytorch1.0-conda3-cuda8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.0-conda3-cuda8) |
 
 ### [Tensorflow](https://www.tensorflow.org/) (including [Keras](https://keras.io/))
 
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `tf2.6.0` | CPU-only | [Dockerfile](docker/tf2.6.0/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.6.0.svg)](https://microbadger.com/images/wqael/notebooks:tf2.6.0) |
-| `tf2.6.0-cuda11.2` | Nvidia Driver >= 450.80.02 | [Dockerfile](docker/tf2.6.0-cuda11.2/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.6.0-cuda11.2.svg)](https://microbadger.com/images/wqael/notebooks:tf2.6.0-cuda11.2) |
-| `tf2.5.0-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/tf2.5.0-cuda11/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.5.0-cuda11.svg)](https://microbadger.com/images/wqael/notebooks:tf2.5.0-cuda11) |
-| `tf2.3.4-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/tf2.3.4-cuda101/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.3.4-cuda101.svg)](https://microbadger.com/images/wqael/notebooks:tf2.3.4-cuda101) |
-| `tf2.0.4-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/tf2.0.4-cuda10/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf2.0.4-cuda10.svg)](https://microbadger.com/images/wqael/notebooks:tf2.0.4-cuda10) |
-| `tf1.15.5` | CPU-only | [Dockerfile](docker/tf1.15.5/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf1.15.5.svg)](https://microbadger.com/images/wqael/notebooks:tf1.15.5) |
-| `tf1.15.5-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/tf1.15.5-cuda10/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:tf1.15.5-cuda10.svg)](https://microbadger.com/images/wqael/notebooks:tf1.15.5-cuda10) |
-| `jupyter-keras-tf1.12.3-py3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-keras-tf1.12.3-py3-cuda9/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.12.3-py3-cuda9.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.12.3-py3-cuda9) |
-| `jupyter-keras-tf1.4.1-py3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-keras-tf1.4.1-py3-cuda8/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.4.1-py3-cuda8.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.4.1-py3-cuda8) |
+| `tf2.6.0` | CPU-only | [Dockerfile](docker/tf2.6.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.6.0) |
+| `tf2.6.0-cuda11.2` | Nvidia Driver >= 450.80.02 | [Dockerfile](docker/tf2.6.0-cuda11.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.6.0-cuda11.2) |
+| `tf2.5.0-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/tf2.5.0-cuda11/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.5.0-cuda11) |
+| `tf2.3.4-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/tf2.3.4-cuda101/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.3.4-cuda101) |
+| `tf2.0.4-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/tf2.0.4-cuda10/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.0.4-cuda10) |
+| `tf1.15.5` | CPU-only | [Dockerfile](docker/tf1.15.5/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf1.15.5) |
+| `tf1.15.5-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/tf1.15.5-cuda10/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf1.15.5-cuda10) |
+| `jupyter-keras-tf1.12.3-py3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-keras-tf1.12.3-py3-cuda9/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-keras-tf1.12.3-py3-cuda9) |
+| `jupyter-keras-tf1.4.1-py3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-keras-tf1.4.1-py3-cuda8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-keras-tf1.4.1-py3-cuda8) |
 
 
 | Tag (Conda-based python) | Comment | Dockerfile | Info |
 | ------------------------ | ------- | ---------- | ---- |
-| `jupyter-keras-tf1.14.0-conda3` | CPU-only | [Dockerfile](docker/jupyter-keras-tf1.14.0-conda3/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.14.0-conda3.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.14.0-conda3) |
-| `jupyter-keras-tf1.14.0-conda3-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/jupyter-keras-tf1.14.0-conda3-cuda10/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.14.0-conda3-cuda10.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.14.0-conda3-cuda10) |
-| `jupyter-keras-tf1.12.0-conda3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-keras-tf1.12.0-conda3-cuda9/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.12.0-conda3-cuda9.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.12.0-conda3-cuda9) |
-| `jupyter-keras-tf1.4.1-conda3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-keras-tf1.4.1-conda3-cuda8/Dockerfile) | [![](https://images.microbadger.com/badges/image/wqael/notebooks:jupyter-keras-tf1.4.1-conda3-cuda8.svg)](https://microbadger.com/images/wqael/notebooks:jupyter-keras-tf1.4.1-conda3-cuda8) |
+| `jupyter-keras-tf1.14.0-conda3` | CPU-only | [Dockerfile](docker/jupyter-keras-tf1.14.0-conda3/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-keras-tf1.14.0-conda3) |
+| `jupyter-keras-tf1.14.0-conda3-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/jupyter-keras-tf1.14.0-conda3-cuda10/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-keras-tf1.14.0-conda3-cuda10) |
+| `jupyter-keras-tf1.12.0-conda3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-keras-tf1.12.0-conda3-cuda9/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-keras-tf1.12.0-conda3-cuda9) |
+| `jupyter-keras-tf1.4.1-conda3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-keras-tf1.4.1-conda3-cuda8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-keras-tf1.4.1-conda3-cuda8) |
 
 
 ### Internal Tags
