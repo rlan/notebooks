@@ -18,12 +18,14 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `tf2.6.0` | CPU-only | [Dockerfile](tf2.6.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.6.0) |
+| `tf2.6.0-cuda11.2` | Nvidia Driver >= 450.80.02 | [Dockerfile](tf2.6.0-cuda11.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.6.0-cuda11.2) |
 | `tf2.5.0` | CPU-only | [Dockerfile](tf2.5.0/Dockerfile) |  |
 | `tf2.4.1` | CPU-only | [Dockerfile](tf2.4.1/Dockerfile) |  |
 | `tf2.4.1-cuda11` | Nvidia Driver >= >= 450.36.06 | [Dockerfile](tf2.4.1-cuda11/Dockerfile) |  |
 | `tf2.4.0` | CPU-only | [Dockerfile](tf2.4.0/Dockerfile) |  |
 | `tf2.4.0-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](tf2.4.0-cuda11/Dockerfile) |  |
-| `tf2.3.3-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/tf2.3.3-cuda101/Dockerfile) |  |
+| `tf2.3.3-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](tf2.3.3-cuda101/Dockerfile) |  |
 | `tf2.3.2-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](tf2.3.2-cuda101/Dockerfile) |  |
 | `tf2.3.1` | CPU-only | [Dockerfile](tf2.3.1/Dockerfile) |  |
 | `tf2.3.1-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](tf2.3.1-cuda101/Dockerfile) |  |

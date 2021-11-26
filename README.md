@@ -76,8 +76,8 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `tf2.6.0` | CPU-only | [Dockerfile](docker/tf2.6.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.6.0) |
-| `tf2.6.0-cuda11.2` | Nvidia Driver >= 450.80.02 | [Dockerfile](docker/tf2.6.0-cuda11.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.6.0-cuda11.2) |
+| `tf2.7.0` | CPU-only | [Dockerfile](docker/tf2.7.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.7.0) |
+| `tf2.7.0-cuda11.2` | Nvidia Driver >= 450.80.02 | [Dockerfile](docker/tf2.7.0-cuda11.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.7.0-cuda11.2) |
 | `tf2.5.0-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/tf2.5.0-cuda11/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.5.0-cuda11) |
 | `tf2.3.4-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/tf2.3.4-cuda101/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.3.4-cuda101) |
 | `tf2.0.4-cuda10` | Nvidia Driver >= 410.xx | [Dockerfile](docker/tf2.0.4-cuda10/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.0.4-cuda10) |
