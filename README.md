@@ -38,14 +38,6 @@ NLP libraries:
 
 If you are reading this on [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefile's will not work. Please start from [project page](https://github.com/rlan/notebooks) instead.
 
-### Experimental
-
-| Tag   | Comment | Dockerfile | Info |
-| ----- | ------- | ---------- | ---- |
-| `latest` | CPU-only. Jupyter. PyTorch 1.4, Keras, TF 1.15.2. | [Dockerfile](docker/latest/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/latest) |
-| `latest-gpu` | CUDA 10.1. Jupyter. PyTorch 1.4, Keras, TF 1.15.2. | [Dockerfile](docker/latest-gpu/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/latest-gpu) |
-
-
 ### [PyTorch](https://pytorch.org/)
 
 Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).
