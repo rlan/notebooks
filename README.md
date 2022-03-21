@@ -138,4 +138,4 @@ After jupyter home page is loaded, i.e. `http://localhost:8888/tree`, browse to 
 
 **Step 4**: How to shutdown the docker image:
 
-In the running image terminal, hit Ctrl+C **twice**.
+In the running image terminal (step 3), hit Ctrl+C **twice**.
