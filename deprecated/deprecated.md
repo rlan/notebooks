@@ -72,22 +72,25 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `pytorch1.11.0` | CPU-only | [Dockerfile](pytorch1.11.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.11.0) |
+| `pytorch1.11.0-cuda11.3.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](pytorch1.11.0-cuda11.3.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.11.0-cuda11.3.1) |
+| `pytorch1.11.0-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](pytorch1.11.0-cuda10.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.11.0-cuda10.2) |
 | `pytorch1.10.0` | CPU-only | [Dockerfile](pytorch1.10.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.10.0) |
-| `pytorch1.10.0-cuda11.3.1` | Nvidia Driver >= 465.19.01 (Linux) 465.89 (Windows) | [Dockerfile](pytorch1.10.0-cuda11.3.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.10.0-cuda11.3.1) |
+| `pytorch1.10.0-cuda11.3.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](pytorch1.10.0-cuda11.3.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.10.0-cuda11.3.1) |
 | `pytorch1.10.0-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](pytorch1.10.0-cuda10.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.10.0-cuda10.2) |
 | `pytorch1.9.0` | CPU-only | [Dockerfile](pytorch1.9.0/Dockerfile) |  |
-| `pytorch1.9.0-cuda11.1.1` | Nvidia Driver >= 455.32 | [Dockerfile](pytorch1.9.0-cuda11.1.1/Dockerfile) |  |
-| `pytorch1.9.0-cuda10.2` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.9.0-cuda10.2/Dockerfile) |  |
+| `pytorch1.9.0-cuda11.1.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](pytorch1.9.0-cuda11.1.1/Dockerfile) |  |
+| `pytorch1.9.0-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](pytorch1.9.0-cuda10.2/Dockerfile) |  |
 | `pytorch1.8.1` | CPU-only | [Dockerfile](pytorch1.8.1/Dockerfile) |  |
-| `pytorch1.8.1-cuda11.1.1` | Nvidia Driver >= 455.32 |  |
-| `pytorch1.8.1-cuda10.2` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.8.1-cuda10.2/Dockerfile) |  |
+| `pytorch1.8.1-cuda11.1.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) |  |
+| `pytorch1.8.1-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](pytorch1.8.1-cuda10.2/Dockerfile) |  |
 | `pytorch1.8.0` | CPU-only | [Dockerfile](pytorch1.8.0/Dockerfile) |  |
-| `pytorch1.8.0-cuda11.1.1` | Nvidia Driver >= 455.32 | [Dockerfile](pytorch1.8.0-cuda11.1.1/Dockerfile) |  |
-| `pytorch1.8.0-cuda10.2` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.8.0-cuda10.2/Dockerfile) |  |
+| `pytorch1.8.0-cuda11.1.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](pytorch1.8.0-cuda11.1.1/Dockerfile) |  |
+| `pytorch1.8.0-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](pytorch1.8.0-cuda10.2/Dockerfile) |  |
 | `pytorch1.7.1` | CPU-only | [Dockerfile](pytorch1.7.1/Dockerfile) |  |
-| `pytorch1.7.1-cuda102` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.7.1-cuda102/Dockerfile) |  |
+| `pytorch1.7.1-cuda102` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](pytorch1.7.1-cuda102/Dockerfile) |  |
 | `pytorch1.7` | CPU-only | [Dockerfile](pytorch1.7/Dockerfile) |  |
-| `pytorch1.7-cuda102` | Nvidia Driver >= 440.33 | [Dockerfile](pytorch1.7-cuda102/Dockerfile) |  |
+| `pytorch1.7-cuda102` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](pytorch1.7-cuda102/Dockerfile) |  |
 | `pytorch1.7-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](pytorch1.7-cuda101/Dockerfile) |  |
 | `pytorch1.7-cuda92` | Nvidia Driver >= 396.xx | [Dockerfile](pytorch1.7-cuda92/Dockerfile) |  |
 | `pytorch1.6` | CPU-only | [Dockerfile](pytorch1.6/Dockerfile) |  |
