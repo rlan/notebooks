@@ -13,7 +13,7 @@ To support both old and new environments, [docker images](https://hub.docker.com
 * machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
 * [CUDA](https://developer.nvidia.com/cuda-zone) v8, v9, v10 and v11.
 
-Check the CUDA compatibility [chart](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver)
+Check this [compatibility chart](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
 for the required version of Nvidia garphics driver for your host system.
 
 [Python](https://www.python.org/) 3 only as Python 2 is [end-of-life](https://pythonclock.org), so [deprecated](deprecated/deprecated.md).
