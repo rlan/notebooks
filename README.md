@@ -44,10 +44,10 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `pytorch1.12.0` | CPU-only | [Dockerfile](docker/pytorch1.12.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.0) |
-| `pytorch1.12.0-cuda11.6` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/pytorch1.12.0-cuda11.6/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.0-cuda11.6) |
-| `pytorch1.12.0-cuda11.3.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/pytorch1.12.0-cuda11.3.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.0-cuda11.3.1) |
-| `pytorch1.12.0-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](docker/pytorch1.12.0-cuda10.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.0-cuda10.2) |
+| `pytorch1.12.1` | CPU-only | [Dockerfile](docker/pytorch1.12.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.1) |
+| `pytorch1.12.1-cuda11.6` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/pytorch1.12.1-cuda11.6/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.1-cuda11.6) |
+| `pytorch1.12.1-cuda11.3.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/pytorch1.12.1-cuda11.3.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.1-cuda11.3.1) |
+| `pytorch1.12.1-cuda10.2` | Nvidia Driver >= 440.33 (Linux) 441.22 (Windows) | [Dockerfile](docker/pytorch1.12.1-cuda10.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.12.1-cuda10.2) |
 | `pytorch1.9.1-cuda11.1.1` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/pytorch1.9.1-cuda11.1.1/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.9.1-cuda11.1.1) |
 | `pytorch1.7.1-cuda11` | Nvidia Driver >= 450.36.06 (Linux) 451.22 (Windows) | [Dockerfile](docker/pytorch1.7.1-cuda11/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.7.1-cuda11) |
 | `pytorch1.7.1-cuda101` | Nvidia Driver >= 418.xx | [Dockerfile](docker/pytorch1.7.1-cuda101/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch1.7.1-cuda101) |
