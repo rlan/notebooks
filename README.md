@@ -94,7 +94,7 @@ For intermediate Docker images, from which final images are build from, see [INT
 
 ### Deprecated Tags
 
-For deprecated tags, see [deprecated/deprecated.md](deprecated/deprecated.md).
+For deprecated tags, see [deprecated/README.md](deprecated/README.md).
 
 
 ## Usage
