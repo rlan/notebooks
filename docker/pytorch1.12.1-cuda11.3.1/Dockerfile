@@ -24,23 +24,19 @@ RUN apt-key del 7fa2af80 \
     && apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub \
     && apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu2004/x86_64/7fa2af80.pub
 
-RUN apt-get -qq update \
-    && apt-get -qq install -y --no-install-recommends \
-        python3-pandas \
-    && apt-get -qq clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 RUN ${PIP} --no-cache-dir install -q --upgrade pip setuptools wheel
 
 # Install pytorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-      torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+      torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
+      ipywidgets \
       jupyterlab \
       matplotlib \
       nltk \
       opencv-python-headless \
+      pandas \
       pillow \
       pytorch-lightning \
       scikit-learn \
@@ -48,9 +44,6 @@ RUN ${PIP} --no-cache-dir install -q --upgrade \
       seaborn \
       tensorboard \
       six
-
-# Set up our notebook config.
-COPY jupyter_notebook_config.py /root/.jupyter/
 
 # Jupyter has issues with being run directly:
 #   https://github.com/ipython/ipython/issues/7062
@@ -65,4 +58,4 @@ EXPOSE 6006
 
 WORKDIR /notebooks
 
-CMD ["/run_jupyter.sh", "--allow-root"]
+CMD ["/run_jupyter.sh", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
