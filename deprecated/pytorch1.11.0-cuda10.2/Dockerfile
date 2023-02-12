@@ -19,23 +19,19 @@ ARG PIP=pip
 # Skips tzdata configuration
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get -qq update \
-    && apt-get -qq install -y --no-install-recommends \
-        python3-pandas \
-    && apt-get -qq clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 RUN ${PIP} --no-cache-dir install -q --upgrade pip setuptools wheel
 
 # Install pytorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-      torch torchvision torchaudio
+      torch==1.11.0+cu102 torchvision==0.12.0+cu102 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu102
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
+      ipywidgets \
       jupyterlab \
       matplotlib \
       nltk \
       opencv-python-headless \
+      pandas \
       pillow \
       pytorch-lightning \
       scikit-learn \
@@ -43,9 +39,6 @@ RUN ${PIP} --no-cache-dir install -q --upgrade \
       seaborn \
       tensorboard \
       six
-
-# Set up our notebook config.
-COPY jupyter_notebook_config.py /root/.jupyter/
 
 # Jupyter has issues with being run directly:
 #   https://github.com/ipython/ipython/issues/7062
@@ -60,4 +53,4 @@ EXPOSE 6006
 
 WORKDIR /notebooks
 
-CMD ["/run_jupyter.sh", "--allow-root"]
+CMD ["/run_jupyter.sh", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
