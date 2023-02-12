@@ -6,26 +6,19 @@ LABEL description="Jupyter / Tensorflow 2.9.1 / CUDA 11.2 / Python 3.8.10 / Ubun
 # Avoid configuring tzdata
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get -qq update \
-    && apt-get -qq install -y --no-install-recommends \
-        python3-pandas \
-    && apt-get -qq clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 RUN pip --no-cache-dir install -q --upgrade pip setuptools wheel
         
 RUN pip --no-cache-dir install -q --upgrade \
+        ipywidgets \
         jupyterlab \
         matplotlib \
         nltk \
         opencv-python-headless \
+        pandas \
         pillow \
         scikit-learn \
         scikit-image \
         seaborn
-
-# Set up our notebook config.
-COPY jupyter_notebook_config.py /root/.jupyter/
 
 # Jupyter has issues with being run directly:
 #   https://github.com/ipython/ipython/issues/7062
@@ -39,4 +32,4 @@ EXPOSE 8888
 
 WORKDIR /notebooks
 
-CMD ["/run_jupyter.sh", "--allow-root"]
+CMD ["/run_jupyter.sh", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
