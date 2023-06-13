@@ -23,7 +23,7 @@ RUN ${PIP} --no-cache-dir install -q --upgrade pip setuptools wheel
 
 # Install pytorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-      torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    torch==2.0.0+cu118 torchvision==0.15.1+cu118 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
       ipywidgets \
