@@ -1,7 +1,7 @@
 FROM nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04
 
 # Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
-ARG DESCRIPTION="PyTorch 2.2.0 / Python 3.10.12 / nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
+ARG DESCRIPTION="PyTorch 2.2.1 / Python 3.10.12 / nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
 ARG CREATED
 ARG URL
 ARG SOURCE
@@ -50,7 +50,7 @@ RUN apt-get update \
 
 # Install pytorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-    pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
+    torch torchvision torchaudio
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     ipywidgets \

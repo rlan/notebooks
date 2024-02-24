@@ -1,7 +1,7 @@
-FROM nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04
+FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 
 # Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
-ARG DESCRIPTION="PyTorch 2.2.0 / Python 3.10.12 / nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
+ARG DESCRIPTION="PyTorch 2.2.1 / Python 3.10.12 / nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04"
 ARG CREATED
 ARG URL
 ARG SOURCE
@@ -26,9 +26,9 @@ LABEL org.label-schema.build-date=${CREATED} \
       org.opencontainers.image.vendor=${VENDOR} \
       org.opencontainers.image.title=${TITLE} \
       org.opencontainers.image.description=${DESCRIPTION} \
-      org.opencontainers.image.base.digest="sha256:f4d8e1264366940438f0353da6f289c7bef069d993d111f8106086ccd18c4a30" \
-      org.opencontainers.image.base.name="docker.io/nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04" \
-      org.opencontainers.image.ref.name="nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
+      org.opencontainers.image.base.digest="sha256:85fb7ac694079fff1061a0140fd5b5a641997880e12112d92589c3bbb1e8b7ca" \
+      org.opencontainers.image.base.name="docker.io/nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04" \
+      org.opencontainers.image.ref.name="nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04"
 
 
 # Skips tzdata configuration
@@ -50,7 +50,7 @@ RUN apt-get update \
 
 # Install pytorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-    pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
+    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     ipywidgets \

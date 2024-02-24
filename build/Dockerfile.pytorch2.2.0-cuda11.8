@@ -50,7 +50,7 @@ RUN apt-get update \
 
 # Install pytorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     ipywidgets \
