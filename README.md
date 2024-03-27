@@ -38,6 +38,8 @@ NLP libraries:
 
 If you are reading this on [Docker Hub](https://hub.docker.com/r/wqael/notebooks/), the links to Dockefile's will not work. Please start from [project page](https://github.com/rlan/notebooks) instead.
 
+Note: the default 'latest' tag does not exist. This is a design choice. Please choose a tag from below.
+
 ### [PyTorch](https://pytorch.org/)
 
 Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).
