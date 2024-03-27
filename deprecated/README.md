@@ -18,6 +18,7 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `tf2.15.0` | CPU-only | [Dockerfile](tf2.15.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.15.0) |
 | `tf2.14.0` | CPU-only | [Dockerfile](tf2.14.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.14.0) |
 | `tf2.14.0-cuda11.8` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](tf2.14.0-cuda11.8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.14.0-cuda11.8) |
 | `tf2.13.0` | CPU-only | [Dockerfile](tf2.13.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.13.0) |

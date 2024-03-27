@@ -74,7 +74,7 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `tf2.15.0` | CPU-only | [Dockerfile](docker/tf2.15.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.15.0) |
+| `tf2.16.1` | CPU-only | [Dockerfile](build/Dockerfile.tf2.16.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.16.1) |
 | `tf2.15.0-cuda11.8` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/tf2.15.0-cuda11.8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.15.0-cuda11.8) |
 | `tf2.11.1-cuda11.2` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/tf2.11.1-cuda11.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.11.1-cuda11.2) |
 | `tf2.5.0-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/tf2.5.0-cuda11/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.5.0-cuda11) |
