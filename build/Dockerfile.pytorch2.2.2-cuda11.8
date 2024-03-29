@@ -1,0 +1,82 @@
+FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+
+# Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
+ARG DESCRIPTION="PyTorch 2.2.2 / Python 3.10.12 / nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04"
+ARG CREATED
+ARG URL
+ARG SOURCE
+ARG VERSION
+ARG REVISION
+ARG VENDOR
+ARG TITLE
+LABEL org.label-schema.build-date=${CREATED} \
+      org.label-schema.url=${URL} \
+      org.label-schema.vcs-url=${SOURCE} \
+      org.label-schema.version=${VERSION} \
+      org.label-schema.vcs-ref=${REVISION} \
+      org.label-schema.vendor=${VENDOR} \
+      org.label-schema.name=${TITLE} \
+      org.label-schema.description=${DESCRIPTION} \
+      org.label-schema.schema-version="1.0" \
+      org.opencontainers.image.created=${CREATED} \
+      org.opencontainers.image.url=${URL} \
+      org.opencontainers.image.source=${SOURCE} \
+      org.opencontainers.image.version=${VERSION} \
+      org.opencontainers.image.revision=${REVISION} \
+      org.opencontainers.image.vendor=${VENDOR} \
+      org.opencontainers.image.title=${TITLE} \
+      org.opencontainers.image.description=${DESCRIPTION} \
+      org.opencontainers.image.base.digest="sha256:85fb7ac694079fff1061a0140fd5b5a641997880e12112d92589c3bbb1e8b7ca" \
+      org.opencontainers.image.base.name="docker.io/nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04" \
+      org.opencontainers.image.ref.name="nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04"
+
+
+# Skips tzdata configuration
+ARG DEBIAN_FRONTEND=noninteractive
+
+# See http://bugs.python.org/issue19846
+ENV LANG C.UTF-8
+
+#ARG PYTHON=python3
+ARG PIP=pip3
+
+# Install python 3, make default and update pip
+RUN apt-get update \
+    && apt-get install -y python3 python3-pip \
+    && apt-get -qq clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    && update-alternatives --install /usr/bin/python python /usr/bin/python3 100 \
+    && ${PIP} --no-cache-dir install -q --upgrade pip
+
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+    ipywidgets \
+    jupyterlab \
+    nltk \
+    opencv-python-headless \
+    pandas \
+    scikit-learn \
+    scikit-image \
+    seaborn
+
+# Install pytorch
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+RUN ${PIP} --no-cache-dir install -q --upgrade \
+    pytorch-lightning \
+    tensorboard
+
+# Jupyter has issues with being run directly:
+#   https://github.com/ipython/ipython/issues/7062
+# We just add a little wrapper script.
+COPY run_jupyter.sh /
+
+# IPython
+EXPOSE 8888
+
+# Tensorboard
+EXPOSE 6006
+
+WORKDIR /notebooks
+
+CMD ["/run_jupyter.sh", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
