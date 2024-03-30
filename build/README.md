@@ -32,4 +32,8 @@ Remove a container:
 make rmi_pytorch2.2.0
 ```
 
+Test a container:
 
+```sh
+make test_pytorch2.2.0
+```
