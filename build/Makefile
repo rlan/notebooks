@@ -31,6 +31,11 @@ _pusher:
 _rmi:
 	docker rmi ${PROJECT}:${_VERSION}
 
+_pytorch_tester:
+	docker run -it --rm ${PROJECT}:${_VERSION} python -c 'import torch; x = torch.eye(2, 2); print(x)'
+
+_tf_tester:
+	docker run -it --rm ${PROJECT}:${_VERSION} python -c 'import tensorflow as tf; x = tf.eye(2); print(x)'
 
 build_%:
 	$(MAKE) _builder \
@@ -45,8 +50,6 @@ push_%:
 		-e _VERSION="$*"
 
 release_%:
-	$(MAKE) _puller \
-		-e _VERSION="$*" && \
 	$(MAKE) _builder \
 		-e _VERSION="$*" && \
 	$(MAKE) _pusher \
@@ -55,3 +58,9 @@ release_%:
 rmi_%:
 	$(MAKE) _rmi \
 		-e _VERSION="$*"
+
+test_pytorch_%:
+	$(MAKE) _pytorch_tester -e _VERSION="$*"
+
+test_tf_%:
+	$(MAKE) _tf_tester -e _VERSION="$*"
