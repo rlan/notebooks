@@ -1,7 +1,7 @@
 FROM python:3.10-slim-bookworm
 
 # Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
-ARG DESCRIPTION="PyTorch 2.2.2 / python:3.10-slim-bookworm"
+ARG DESCRIPTION="PyTorch 2.3.0 / python:3.10-slim-bookworm"
 ARG CREATED
 ARG URL
 ARG SOURCE
@@ -45,7 +45,7 @@ RUN ${PIP} --no-cache-dir install -q --upgrade \
 
 # Install PyTorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-    torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cpu
+    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     pytorch-lightning \
