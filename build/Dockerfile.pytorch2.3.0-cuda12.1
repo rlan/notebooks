@@ -1,7 +1,7 @@
 FROM nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04
 
 # Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
-ARG DESCRIPTION="PyTorch 2.2.2 / Python 3.10.12 / nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
+ARG DESCRIPTION="PyTorch 2.3.0 / Python 3.10.12 / nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
 ARG CREATED
 ARG URL
 ARG SOURCE
@@ -60,7 +60,7 @@ RUN ${PIP} --no-cache-dir install -q --upgrade \
 
 # Install pytorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-    torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu121
+    torch torchvision torchaudio
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     pytorch-lightning \
