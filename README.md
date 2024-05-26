@@ -1,13 +1,14 @@
 # Notebooks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11311585.svg)](https://doi.org/10.5281/zenodo.11311585)
+![Docker Pulls](https://img.shields.io/docker/pulls/wqael/notebooks)
+![Docker Stars](https://img.shields.io/docker/stars/wqael/notebooks)
+
 A docker-based starter kit for machine learning via jupyter notebooks. Designed for those who just want a runtime environment and get on with machine learning.
 
 ![notebooks_screenshot](assets/notebooks.jpg)
 
 ## Docker Images
-
-![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
-![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
 
 To support both old and new environments, [docker images](https://hub.docker.com/r/wqael/notebooks/) cover various combinations of
 * machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
@@ -149,3 +150,14 @@ After jupyter home page is loaded, i.e. `http://localhost:8888/tree`, browse to 
 **Step 4**: How to shutdown the docker image:
 
 In the running image terminal (step 3), hit Ctrl+C **twice**.
+
+
+## Citation
+
+If this project helps your research, don't hesitate to spread the word! Click on the badge below and find citation formats (e.g., BibTeX and etc) at the bottom of that page.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11311585.svg)](https://doi.org/10.5281/zenodo.11311585)
+
+## License
+
+[MIT](LICENSE)
