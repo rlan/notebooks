@@ -20,6 +20,20 @@ _builder:
 		--build-arg REVISION=${_REVISION} \
 		--build-arg VENDOR=${_VENDOR} \
 		--build-arg TITLE=${_VERSION} \
+		--platform="linux/amd64" \
+		--tag ${PROJECT}:${_VERSION} .
+
+_builder_arm64:
+	docker build \
+		--file Dockerfile.${_VERSION} \
+		--build-arg CREATED=${_CREATED} \
+		--build-arg URL=${_URL} \
+		--build-arg SOURCE=${_SOURCE} \
+		--build-arg VERSION=${_VERSION} \
+		--build-arg REVISION=${_REVISION} \
+		--build-arg VENDOR=${_VENDOR} \
+		--build-arg TITLE=${_VERSION} \
+		--platform="linux/arm64" \
 		--tag ${PROJECT}:${_VERSION} .
  
 _puller:
@@ -42,6 +56,9 @@ _unknown_tester:
 
 build_%:
 	$(MAKE) _builder -e _VERSION="$*"
+
+buildarm64_%:
+	$(MAKE) _builder_arm64 -e _VERSION="$*"
 
 pull_%:
 	$(MAKE) _puller -e _VERSION="$*"

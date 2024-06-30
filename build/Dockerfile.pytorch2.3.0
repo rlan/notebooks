@@ -45,7 +45,7 @@ RUN ${PIP} --no-cache-dir install -q --upgrade \
 
 # Install PyTorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+    torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cpu
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     pytorch-lightning \

@@ -1,7 +1,7 @@
-FROM nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04
+FROM python:3.10-slim-bookworm
 
 # Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
-ARG DESCRIPTION="PyTorch 2.3.0 / Python 3.10.12 / nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
+ARG DESCRIPTION="PyTorch 2.3.1 / python:3.10-slim-bookworm"
 ARG CREATED
 ARG URL
 ARG SOURCE
@@ -26,27 +26,12 @@ LABEL org.label-schema.build-date=${CREATED} \
       org.opencontainers.image.vendor=${VENDOR} \
       org.opencontainers.image.title=${TITLE} \
       org.opencontainers.image.description=${DESCRIPTION} \
-      org.opencontainers.image.base.digest="sha256:f4d8e1264366940438f0353da6f289c7bef069d993d111f8106086ccd18c4a30" \
-      org.opencontainers.image.base.name="docker.io/nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04" \
-      org.opencontainers.image.ref.name="nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04"
-
-
-# Skips tzdata configuration
-ARG DEBIAN_FRONTEND=noninteractive
-
-# See http://bugs.python.org/issue19846
-ENV LANG C.UTF-8
+      org.opencontainers.image.base.digest="sha256:5e38f0e65bd16247b4c2ad294d388c74bd96da3b7800edc570d72f2e3a403707" \
+      org.opencontainers.image.base.name="docker.io/library/python:3.10-slim-bookworm" \
+      org.opencontainers.image.ref.name="python:3.10-slim-bookworm"
 
 #ARG PYTHON=python3
 ARG PIP=pip3
-
-# Install python 3, make default and update pip
-RUN apt-get update \
-    && apt-get install -y python3 python3-pip \
-    && apt-get -qq clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    && update-alternatives --install /usr/bin/python python /usr/bin/python3 100 \
-    && ${PIP} --no-cache-dir install -q --upgrade pip
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     ipywidgets \
@@ -58,9 +43,9 @@ RUN ${PIP} --no-cache-dir install -q --upgrade \
     scikit-image \
     seaborn
 
-# Install pytorch
+# Install PyTorch
 RUN ${PIP} --no-cache-dir install -q --upgrade \
-    torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+    torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 RUN ${PIP} --no-cache-dir install -q --upgrade \
     pytorch-lightning \

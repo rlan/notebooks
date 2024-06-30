@@ -1,13 +1,14 @@
 # Notebooks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11311585.svg)](https://doi.org/10.5281/zenodo.11311585)
+![Docker Pulls](https://img.shields.io/docker/pulls/wqael/notebooks)
+![Docker Stars](https://img.shields.io/docker/stars/wqael/notebooks)
+
 A docker-based starter kit for machine learning via jupyter notebooks. Designed for those who just want a runtime environment and get on with machine learning.
 
 ![notebooks_screenshot](assets/notebooks.jpg)
 
 ## Docker Images
-
-![](https://img.shields.io/docker/pulls/wqael/notebooks.svg)
-![](https://img.shields.io/docker/stars/wqael/notebooks.svg)
 
 To support both old and new environments, [docker images](https://hub.docker.com/r/wqael/notebooks/) cover various combinations of
 * machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
@@ -46,7 +47,7 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `pytorch2.3.0` | CPU-only | [Dockerfile](build/Dockerfile.pytorch2.3.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.0) |
+| `pytorch2.3.1` | CPU-only | [Dockerfile](build/Dockerfile.pytorch2.3.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.1) |
 | `pytorch2.3.0-cuda12.1` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit Driver Version >= 530.30.02 (Linux) 531.14 (Windows). | [Dockerfile](build/Dockerfile.pytorch2.3.0-cuda12.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.0-cuda12.1) |
 | `pytorch2.3.0-cuda11.8` | Minimum required Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows). Toolkit Driver Version >= 520.61.05 (Linux) 520.06 (Windows) | [Dockerfile](build/Dockerfile.pytorch2.3.0-cuda11.8) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.0-cuda11.8) |
 | `pytorch2.0.1-cuda11.7` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/pytorch2.0.1-cuda11.7/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.0.1-cuda11.7) |
@@ -149,3 +150,14 @@ After jupyter home page is loaded, i.e. `http://localhost:8888/tree`, browse to 
 **Step 4**: How to shutdown the docker image:
 
 In the running image terminal (step 3), hit Ctrl+C **twice**.
+
+
+## Citation
+
+If this project helps your research, don't hesitate to spread the word! Click on the badge below and find citation formats (e.g., BibTeX and etc) at the bottom of that page.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11311585.svg)](https://doi.org/10.5281/zenodo.11311585)
+
+## License
+
+[MIT](LICENSE)
