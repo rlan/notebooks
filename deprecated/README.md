@@ -18,6 +18,7 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `tf2.16.2` | CPU-only | [Dockerfile](../build/Dockerfile.tf2.16.2) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.16.2) |
 | `tf2.16.1` | CPU-only | [Dockerfile](../build/Dockerfile.tf2.16.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.16.1) |
 | `tf2.15.0` | CPU-only | [Dockerfile](tf2.15.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.15.0) |
 | `tf2.14.0` | CPU-only | [Dockerfile](tf2.14.0/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.14.0) |
