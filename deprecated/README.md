@@ -85,6 +85,7 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `pytorch2.4.0` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.4.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.4.0) |
 | `pytorch2.3.1` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.3.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.1) |
 | `pytorch2.3.0` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.3.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.0) |
 | `pytorch2.2.2` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.2.2) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.2.2) |
