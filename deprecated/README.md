@@ -85,8 +85,11 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `pytorch2.4.1` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.4.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.4.1) |
 | `pytorch2.4.0` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.4.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.4.0) |
 | `pytorch2.3.1` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.3.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.1) |
+| `pytorch2.3.0-cuda12.1` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit Driver Version >= 530.30.02 (Linux) 531.14 (Windows). | [Dockerfile](../build/Dockerfile.pytorch2.3.0-cuda12.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.0-cuda12.1) |
+| `pytorch2.3.0-cuda11.8` | Minimum required Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows). Toolkit Driver Version >= 520.61.05 (Linux) 520.06 (Windows) | [Dockerfile](../build/Dockerfile.pytorch2.3.0-cuda11.8) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.0-cuda11.8) |
 | `pytorch2.3.0` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.3.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.3.0) |
 | `pytorch2.2.2` | CPU-only | [Dockerfile](../build/Dockerfile.pytorch2.2.2) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.2.2) |
 | `pytorch2.2.2-cuda12.1` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit Driver Version >= 530.30.02 (Linux) 531.14 (Windows). | [Dockerfile](../build/Dockerfile.pytorch2.2.2-cuda12.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.2.2-cuda12.1) |

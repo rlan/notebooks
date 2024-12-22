@@ -1,0 +1,58 @@
+FROM pytorch/pytorch:2.5.1-cuda12.1-cudnn9-runtime
+
+# Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
+ARG DESCRIPTION="PyTorch 2.5.1 / Python 3.11.10 / pytorch/pytorch:2.5.1-cuda12.1-cudnn9-runtime"
+ARG CREATED
+ARG URL
+ARG SOURCE
+ARG VERSION
+ARG REVISION
+ARG VENDOR
+ARG TITLE
+LABEL org.label-schema.build-date=${CREATED} \
+      org.label-schema.url=${URL} \
+      org.label-schema.vcs-url=${SOURCE} \
+      org.label-schema.version=${VERSION} \
+      org.label-schema.vcs-ref=${REVISION} \
+      org.label-schema.vendor=${VENDOR} \
+      org.label-schema.name=${TITLE} \
+      org.label-schema.description=${DESCRIPTION} \
+      org.label-schema.schema-version="1.0" \
+      org.opencontainers.image.created=${CREATED} \
+      org.opencontainers.image.url=${URL} \
+      org.opencontainers.image.source=${SOURCE} \
+      org.opencontainers.image.version=${VERSION} \
+      org.opencontainers.image.revision=${REVISION} \
+      org.opencontainers.image.vendor=${VENDOR} \
+      org.opencontainers.image.title=${TITLE} \
+      org.opencontainers.image.description=${DESCRIPTION} \
+      org.opencontainers.image.base.digest="sha256:831247999fbf7e08f61b3e39f6d77ee434f38f6f07f769d00db451e853878067" \
+      org.opencontainers.image.base.name="docker.io/pytorch/pytorch:2.5.1-cuda12.1-cudnn9-runtime" \
+      org.opencontainers.image.ref.name="pytorch/pytorch:2.5.1-cuda12.1-cudnn9-runtime"
+
+RUN pip --no-cache-dir install -q --upgrade \
+    ipywidgets \
+    jupyterlab \
+    nltk \
+    opencv-python-headless \
+    pandas \
+    pytorch-lightning \
+    scikit-learn \
+    scikit-image \
+    seaborn \
+    tensorboard
+
+# Jupyter has issues with being run directly:
+#   https://github.com/ipython/ipython/issues/7062
+# We just add a little wrapper script.
+COPY run_jupyter.sh /
+
+# IPython
+EXPOSE 8888
+
+# Tensorboard
+EXPOSE 6006
+
+WORKDIR /notebooks
+
+CMD ["/run_jupyter.sh", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
