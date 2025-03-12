@@ -1,0 +1,57 @@
+FROM tensorflow/tensorflow:2.19.0
+
+# Annotation spec: https://github.com/opencontainers/image-spec/blob/main/annotations.md
+ARG DESCRIPTION="TensorFlow 2.19.0 / Python 3.11.11 / Ubuntu 22.04"
+ARG CREATED
+ARG URL
+ARG SOURCE
+ARG VERSION
+ARG REVISION
+ARG VENDOR
+ARG TITLE
+LABEL org.label-schema.build-date=${CREATED} \
+      org.label-schema.url=${URL} \
+      org.label-schema.vcs-url=${SOURCE} \
+      org.label-schema.version=${VERSION} \
+      org.label-schema.vcs-ref=${REVISION} \
+      org.label-schema.vendor=${VENDOR} \
+      org.label-schema.name=${TITLE} \
+      org.label-schema.description=${DESCRIPTION} \
+      org.label-schema.schema-version="1.0" \
+      org.opencontainers.image.created=${CREATED} \
+      org.opencontainers.image.url=${URL} \
+      org.opencontainers.image.source=${SOURCE} \
+      org.opencontainers.image.version=${VERSION} \
+      org.opencontainers.image.revision=${REVISION} \
+      org.opencontainers.image.vendor=${VENDOR} \
+      org.opencontainers.image.title=${TITLE} \
+      org.opencontainers.image.description=${DESCRIPTION} \
+      org.opencontainers.image.base.digest="sha256:f24e8494d43a4e613edd7fbd3782594368d52d79af1e216051139ed2d7830682" \
+      org.opencontainers.image.base.name="docker.io/tensorflow/tensorflow:2.19.0" \
+      org.opencontainers.image.ref.name="tensorflow/tensorflow:2.19.0"
+
+
+RUN pip --no-cache-dir install -q --upgrade \
+      ipywidgets \
+      jupyterlab \
+      keras \
+      nltk \
+      opencv-python-headless \
+      pandas \
+      scikit-learn \
+      scikit-image \
+      seaborn
+
+# Jupyter has issues with being run directly:
+#   https://github.com/ipython/ipython/issues/7062
+# We just add a little wrapper script.
+COPY run_jupyter.sh /
+
+# TensorBoard
+EXPOSE 6006
+# IPython
+EXPOSE 8888
+
+WORKDIR /notebooks
+
+CMD ["/run_jupyter.sh", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]

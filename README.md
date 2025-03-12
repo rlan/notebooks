@@ -11,7 +11,7 @@ A docker-based starter kit for machine learning via jupyter notebooks. Designed 
 ## Docker Images
 
 To support both old and new environments, [docker images](https://hub.docker.com/r/wqael/notebooks/) cover various combinations of
-* machine learning frameworks ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
+* machine learning frameworks ([Keras](https://keras.io/), [TensorFlow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/))
 * [CUDA](https://developer.nvidia.com/cuda-zone) v8, v9, v10 and v11.
 
 Check this [compatibility chart](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
@@ -74,12 +74,12 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 | `jupyter-pytorch1.1-conda3-cuda9` | Nvidia Driver >= 384.xx | [Dockerfile](docker/jupyter-pytorch1.1-conda3-cuda9/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.1-conda3-cuda9) |
 | `jupyter-pytorch1.0-conda3-cuda8` | Nvidia Driver >= 375.xx | [Dockerfile](docker/jupyter-pytorch1.0-conda3-cuda8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/jupyter-pytorch1.0-conda3-cuda8) |
 
-### [Tensorflow](https://www.tensorflow.org/) (including [Keras](https://keras.io/))
+### [TensorFlow](https://www.tensorflow.org/) (including [Keras](https://keras.io/))
 
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `tf2.18.0` | CPU-only | [Dockerfile](build/Dockerfile.tf2.18.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.18.0) |
+| `tf2.19.0` | CPU-only | [Dockerfile](build/Dockerfile.tf2.19.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.19.0) |
 | `tf2.18.0-cuda12.3` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit driver version >= 545.23.06 (Linux) 545.84 (Windows). | [Dockerfile](build/Dockerfile.tf2.18.0-cuda12.3) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.18.0-cuda12.3) |
 | `tf2.15.0-cuda11.8` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/tf2.15.0-cuda11.8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.15.0-cuda11.8) |
 | `tf2.11.1-cuda11.2` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/tf2.11.1-cuda11.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.11.1-cuda11.2) |

@@ -13,11 +13,12 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 ## Python 3
 
-### [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/)
+### [Keras](https://keras.io/) and [TensorFlow](https://www.tensorflow.org/)
 
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
+| `tf2.18.0` | CPU-only | [Dockerfile](../build/Dockerfile.tf2.18.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.18.0) |
 | `tf2.17.0` | CPU-only | [Dockerfile](../build/Dockerfile.tf2.17.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.17.0) |
 | `tf2.16.2` | CPU-only | [Dockerfile](../build/Dockerfile.tf2.16.2) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.16.2) |
 | `tf2.16.1` | CPU-only | [Dockerfile](../build/Dockerfile.tf2.16.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.16.1) |
@@ -176,7 +177,7 @@ Caffe2 APIs are being [deprecated](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTo
 
 ## Python 2
 
-### [Keras](https://keras.io/) and [Tensorflow](https://www.tensorflow.org/)
+### [Keras](https://keras.io/) and [TensorFlow](https://www.tensorflow.org/)
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
