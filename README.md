@@ -80,7 +80,7 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
 | `tf2.19.0` | CPU-only | [Dockerfile](build/Dockerfile.tf2.19.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.19.0) |
-| `tf2.18.0-cuda12.3` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit driver version >= 545.23.06 (Linux) 545.84 (Windows). | [Dockerfile](build/Dockerfile.tf2.18.0-cuda12.3) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.18.0-cuda12.3) |
+| `tf2.19.0-cuda12.3` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit driver version >= 545.23.06 (Linux) 545.84 (Windows). | [Dockerfile](build/Dockerfile.tf2.19.0-cuda12.3) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.19.0-cuda12.3) |
 | `tf2.15.0-cuda11.8` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/tf2.15.0-cuda11.8/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.15.0-cuda11.8) |
 | `tf2.11.1-cuda11.2` | Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows) | [Dockerfile](docker/tf2.11.1-cuda11.2/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.11.1-cuda11.2) |
 | `tf2.5.0-cuda11` | Nvidia Driver >= 450.36.06 | [Dockerfile](docker/tf2.5.0-cuda11/Dockerfile) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/tf2.5.0-cuda11) |
