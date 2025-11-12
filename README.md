@@ -47,7 +47,7 @@ Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://git
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
-| `pytorch2.9.0` | CPU-only | [Dockerfile](build/Dockerfile.pytorch2.9.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.9.0) |
+| `pytorch2.9.1` | CPU-only | [Dockerfile](build/Dockerfile.pytorch2.9.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.9.1) |
 | `pytorch2.8.0-cuda12.6` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit Driver Version >= 560.28.03 (Linux) 560.76 (Windows). | [Dockerfile](build/Dockerfile.pytorch2.8.0-cuda12.6) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.8.0-cuda12.6) |
 | `pytorch2.6.0-cuda12.4` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit Driver Version >= 550.54.15 (Linux) 551.78 (Windows). | [Dockerfile](build/Dockerfile.pytorch2.6.0-cuda12.4) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.6.0-cuda12.4) |
 | `pytorch2.6.0-cuda11.8` | Minimum required Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows). Toolkit Driver Version >= 520.61.05 (Linux) 520.06 (Windows). | [Dockerfile](build/Dockerfile.pytorch2.6.0-cuda11.8) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.6.0-cuda11.8) |
