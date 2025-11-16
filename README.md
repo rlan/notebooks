@@ -43,11 +43,12 @@ Note: the default 'latest' tag does not exist. This is a design choice. Please c
 
 ### [PyTorch](https://pytorch.org/)
 
-Images of Pytorch version 1.5 and higher include [Pytorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).
+Images of PyTorch version 1.5 and higher include [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning).
 
 | Tag (OS-based python) | Comment | Dockerfile | Info |
 | --------------------- | ------- | ---------- | ---- |
 | `pytorch2.9.1` | CPU-only | [Dockerfile](build/Dockerfile.pytorch2.9.1) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.9.1) |
+| `pytorch2.9.1-cuda13.0` | Python 3.11.14 | [Dockerfile](build/Dockerfile.pytorch2.9.1-cuda13.0) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.9.1-cuda13.0) |
 | `pytorch2.8.0-cuda12.6` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit Driver Version >= 560.28.03 (Linux) 560.76 (Windows). | [Dockerfile](build/Dockerfile.pytorch2.8.0-cuda12.6) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.8.0-cuda12.6) |
 | `pytorch2.6.0-cuda12.4` | Minimum required Nvidia Driver >= 525.60.13 (Linux) 528.33 (Windows). Toolkit Driver Version >= 550.54.15 (Linux) 551.78 (Windows). | [Dockerfile](build/Dockerfile.pytorch2.6.0-cuda12.4) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.6.0-cuda12.4) |
 | `pytorch2.6.0-cuda11.8` | Minimum required Nvidia Driver >= 450.80.02 (Linux) 452.39 (Windows). Toolkit Driver Version >= 520.61.05 (Linux) 520.06 (Windows). | [Dockerfile](build/Dockerfile.pytorch2.6.0-cuda11.8) | ![](https://img.shields.io/docker/image-size/wqael/notebooks/pytorch2.6.0-cuda11.8) |
